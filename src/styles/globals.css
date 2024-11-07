@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Merriweather */
+@font-face {
+  font-family: 'merriweather-regular';
+  src: url('../../public/fonts/Merriweather/Merriweather-Regular.ttf');
+}
+@font-face {
+  font-family: 'merriweather-bold';
+  src: url('../../public/fonts/Merriweather/Merriweather-Regular.ttf');
+}
+@font-face {
+  font-family: 'merriweather-black';
+  src: url('../../public/fonts/Merriweather/Merriweather-Black.ttf');
+}
+
+
+/* Plus Jakarta Sans  */
+@font-face {
+  font-family: 'jakarta-regular';
+  src: url('../../public/fonts/Plus_Jakarta_Sans/PlusJakartaSans-VariableFont_wght.ttf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'jakarta-medium';
+  src: url('../../public/fonts/Plus_Jakarta_Sans/PlusJakartaSans-VariableFont_wght.ttf');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'jakarta-semibold';
+  src: url('../../public/fonts/Plus_Jakarta_Sans/PlusJakartaSans-VariableFont_wght.ttf');
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'jakarta-bold';
+  src: url('../../public/fonts/Plus_Jakarta_Sans/PlusJakartaSans-VariableFont_wght.ttf');
+  font-weight: 700;
+}
+
+/* Roboto */
+@font-face {
+  font-family: 'roboto-regular';
+  src: url('../../public/fonts/Roboto/Roboto-Regular.ttf');
+}
+@font-face {
+  font-family: 'roboto-medium';
+  src: url('../../public/fonts/Roboto/Roboto-Medium.ttf');
+}
+@font-face {
+  font-family: 'roboto-bold';
+  src: url('../../public/fonts/Roboto/Roboto-Bold.ttf');
+}
+
+
+/* defaul styling */
+body {
+  font-family: "jakarta-regular";
+}
