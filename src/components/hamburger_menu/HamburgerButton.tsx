@@ -1,19 +1,19 @@
 'use client'
-import React, { useState } from 'react';
 import './hamburger.css'
 
 interface HamburgerButtonProps {
   size?: 'sm' | 'md' | 'lg';
+  isActive: boolean;
+  handleClicked: () => void;
 }
 
-const HamburgerButton: React.FC<HamburgerButtonProps> = ({ size = 'md' }) => {
+const HamburgerButton: React.FC<HamburgerButtonProps> = ({ 
+  size = 'md', 
+  handleClicked,
+  isActive
+}) => {
   // State to manage the active state of the hamburger
-  const [isActive, setIsActive] = useState<boolean>(false);
 
-  // Toggle function to switch between active and inactive states
-  const toggle = () => {
-    setIsActive((prev) => !prev);
-  };
 
   // Define class names based on the size prop and isActive state
   const getHamburgerSizeClass = () => {
@@ -30,7 +30,7 @@ const HamburgerButton: React.FC<HamburgerButtonProps> = ({ size = 'md' }) => {
   return (
     <div
       className={`hamburger ${isActive ? 'is-active' : ''} ${getHamburgerSizeClass()} cursor-pointer block lg:hidden`} // Tailwind: visible on mobile only (lg:hidden)
-      onClick={toggle}
+      onClick={handleClicked}
     >
       <span className="hamburger-line"></span>
       <span className="hamburger-line"></span>
