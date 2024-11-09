@@ -2,6 +2,7 @@ import NavLogo from "./NavLogo";
 import "../navbar/NavBar.css";
 import { ButtonLink } from "../button/ButtonLink";
 import { ButtonCta } from "../button/ButtonCta";
+import HamburgerButton from "../hamburger_menu/HamburgerButton";
 
 const NavBar = () => {
   const tailwind_styling =
@@ -14,7 +15,7 @@ const NavBar = () => {
     <header className="mb-[7rem] bg-none">
       {/* Desktop NavBar */}
       <nav
-        className={`${tailwind_styling} hidden lg:flex md:px-8 lg:px-12 py-0 items-center justify-between bg-white_ghost border-b border-b-[#B9B9B9]`}
+        className={`${tailwind_styling} hidden lg:flex lg:px-12 py-0 items-center justify-between bg-white_ghost border-b border-b-[rgb(185,185,185)]`}
       >
         <NavLogo />
         <ul className="w-fit gap-6 flex items-center justify-between jakarta-medium">
@@ -40,19 +41,10 @@ const NavBar = () => {
       </nav>
 
       {/* Mobile NavBar */}
-      <nav className={`${tailwind_styling} lg:hidden flex c px-4`}>
+      <nav className={`${tailwind_styling} lg:hidden flex c px-8 items-center justify-between`}>
         <NavLogo />
-        <ul>
-          <li>
-            <ButtonLink link="#" text="nav list" />
-          </li>
-        </ul>
-        {/* Hamburger menu */}
-        <div id="nav-icon4">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
+        {/* SIDEBAR BUTTON  */}
+        <HamburgerButton size="md"/>
       </nav>
     </header>
   );

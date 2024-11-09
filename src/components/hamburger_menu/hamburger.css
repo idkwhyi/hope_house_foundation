@@ -1,0 +1,75 @@
+
+ /* HamburgerButton.css */
+.hamburger {
+  position: relative;
+  display: inline-block;
+  width: 2em; /* Default size, you can increase this value */
+  height: 2em; /* Default size, you can increase this value */
+  font-size: inherit;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  /* background-color: salmon; */
+}
+
+.hamburger-line {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0.125em;
+  border-radius: 0.125em;
+  background: currentColor;
+  transition: inherit;
+}
+
+.hamburger-line:nth-child(1) {
+  top: 0.225em;
+}
+
+.hamburger.is-active .hamburger-line:nth-child(1) {
+  top: 50%;
+  transform: translateY(-50%) rotateZ(-135deg);
+}
+
+.hamburger-line:nth-child(2) {
+  top: 45%;
+}
+
+.hamburger.is-active .hamburger-line:nth-child(2) {
+  right: 50%;
+  width: 0;
+}
+
+.hamburger-line:nth-child(3) {
+  bottom: 0.225em;
+  width: 1.225em;
+}
+
+.hamburger.is-active .hamburger-line:nth-child(3) {
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%) rotateZ(135deg);
+}
+
+/* Responsive styles: Customize the hamburger size based on screen width */
+
+/* For smaller screens (sm) */
+.is-sm {
+  font-size: 1.5rem; /* Increase size for smaller screens */
+  width: 2.5rem; /* Increase width */
+  height: 2.5rem; /* Increase height */
+}
+
+/* For medium screens (md) MOBILE VIEW*/
+.is-md {
+  font-size: 1.2rem; /* Default for md */
+  width: 2.4rem; /* Default width for md */
+  height: 2.4rem; /* Default height for md */
+}
+
+/* For large screens (lg and up), hide the hamburger menu */
+@media (min-width: 1024px) {
+  .hamburger {
+    display: none; /* Hide the hamburger menu on large screens */
+  } 
+}
+
