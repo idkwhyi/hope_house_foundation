@@ -1,43 +1,54 @@
-'use client'
+"use client";
 import NavLogo from "./NavLogo";
 import "../navbar/NavBar.css";
 import { ButtonLink } from "../button/ButtonLink";
+import { ButtonLinkMobile } from "../button/ButtonLinkMobile";
 import { ButtonCta } from "../button/ButtonCta";
 import HamburgerButton from "../hamburger_menu/HamburgerButton";
 import { useState } from "react";
 
 const NavBar = () => {
   const tailwind_styling =
-    "w-screen min-h-[6rem] max-h-[6rem] fixed top-0 z-50 bg-faded-gray";
+    "w-screen min-h-[6rem] max-h-[6rem] fixed top-0 z-50 bg-faded-gray border-b border-b-[rgb(185,185,185)]";
 
-  const button_bg = "#FF6B6B";
-  const button_bg_hover = "#E85A5A";
+  const button_bg = "#a3cfba"
+  const button_bg_hover = "#8FC0A9";
+  const desktop_font_size = "1.8rem";
+  const mobile_font_size = "2rem";
 
   const [sidebarStatus, setSidebarStatus] = useState<boolean>(false);
 
-  const handleToggleSidebar = ():void => {
-    setSidebarStatus(!sidebarStatus)
-  }
+  const handleToggleSidebar = (): void => {
+    setSidebarStatus(!sidebarStatus);
+  };
 
   return (
     <header className="mb-[6rem] bg-none">
       {/* Desktop NavBar */}
       <nav
-        className={`${tailwind_styling} hidden lg:flex lg:px-12 py-0 items-center justify-between bg-white_ghost border-b border-b-[rgb(185,185,185)]`}
+        className={`${tailwind_styling} hidden lg:flex lg:px-12 py-0 items-center justify-between bg-white_ghost`}
       >
         <NavLogo />
         <ul className="w-fit gap-6 flex items-center justify-between jakarta-medium">
           <li>
-            <ButtonLink link="#" text="Home" />
+            <ButtonLink link="#" text="Home" font_size={desktop_font_size} />
           </li>
           <li>
-            <ButtonLink link="#" text="About us" />
+            <ButtonLink
+              link="#"
+              text="About us"
+              font_size={desktop_font_size}
+            />
           </li>
           <li>
-            <ButtonLink link="#" text="Contact" />
+            <ButtonLink link="#" text="Contact" font_size={desktop_font_size} />
           </li>
           <li>
-            <ButtonLink link="#" text="Donation" />
+            <ButtonLink
+              link="#"
+              text="Donation"
+              font_size={desktop_font_size}
+            />
           </li>
         </ul>
         <ButtonCta
@@ -45,6 +56,11 @@ const NavBar = () => {
           text="Donate"
           background_color={button_bg}
           background_color_hover={button_bg_hover}
+          padding_x="1.6rem"
+          padding_y="1.8rem"
+          font_weight="medium"
+          font_color="black"
+          border_color="#747474"
         />
       </nav>
 
@@ -53,11 +69,42 @@ const NavBar = () => {
         className={`${tailwind_styling} lg:hidden flex c px-8 items-center justify-between`}
       >
         <NavLogo />
-        <HamburgerButton size="md" isActive={sidebarStatus} handleClicked={handleToggleSidebar} />
+        <HamburgerButton
+          size="md"
+          isActive={sidebarStatus}
+          handleClicked={handleToggleSidebar}
+        />
         {sidebarStatus && (
-          <div className="absolute w-screen h-screen bg-blue-200 top-0 left-0 mt-[6rem]">
-            test
-          </div>
+          <ul className="absolute w-screen h-screen top-0 left-0 mt-[6rem] flex flex-col items-end justify-start pt-4 gap-4 jakarta-medium bg-main-bg">
+            <li className="w-full flex items-center justify-center">
+              <ButtonLinkMobile
+                link="#"
+                text="Home"
+                font_size={mobile_font_size}
+              />
+            </li>
+            <li className="w-full flex items-center justify-center">
+              <ButtonLinkMobile
+                link="#"
+                text="About us"
+                font_size={mobile_font_size}
+              />
+            </li>
+            <li className="w-full flex items-center justify-center">
+              <ButtonLinkMobile
+                link="#"
+                text="Contact"
+                font_size={mobile_font_size}
+              />
+            </li>
+            <li className="w-full flex items-center justify-center">
+              <ButtonLinkMobile
+                link="#"
+                text="Donation"
+                font_size={mobile_font_size}
+              />
+            </li>
+          </ul>
         )}
       </nav>
     </header>

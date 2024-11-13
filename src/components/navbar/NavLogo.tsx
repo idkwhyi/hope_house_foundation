@@ -24,7 +24,7 @@ const NavLogo = () => {
   return (
     <div className="flex items-center justify-center gap-2">
       <Image 
-        src='/images/logo.png'
+        src='/images/logo.jpeg'
         alt="logo"
         width={imageSize}
         height={imageSize}

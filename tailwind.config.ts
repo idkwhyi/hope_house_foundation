@@ -10,8 +10,8 @@ const config: Config = {
   theme: {
   	extend: {
   		colors: {
-  			white_ghost: 'f4f4f4',
-  			'faded-gray': 'rgba(250, 250, 250, 0.93)',
+  		  'faded-gray': 'rgba(250, 250, 250, 0.93)',
+        'main-bg': 'rgb(250, 250, 250)',
         'custom-red': 'FF6B6B',
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',

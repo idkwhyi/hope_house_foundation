@@ -1,3 +1,4 @@
+import HomeHero from "@/components/hero/HomeHero";
 import NavBar from "@/components/navbar/NavBar";
 
 export default function Home() {
@@ -6,9 +7,9 @@ export default function Home() {
       {/* header is included inside navbar */}
       <NavBar />
       <main className="flex flex-col h-fit">
-        {/* <div className="h-full bg-red-400">main content</div> */}
+        <HomeHero/>
+        testing
       </main>
-      {/* <footer>footer section</footer> */}
     </>
   );
 }
