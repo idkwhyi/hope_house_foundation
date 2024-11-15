@@ -1,13 +1,10 @@
-import React from "react";
-import { ButtonCta } from "@/components/button/ButtonCta";
+import React from 'react'
 import Image from "next/image";
 import LineAndText from "@/components/line/LineAndText";
 
-const HomeAboutUs = () => {
-  const button_bg = "#a3cfba";
-  const button_bg_hover = "#8FC0A9";
+const HomeEducationCrisis = () => {
   return (
-    <section className="relative w-full h-max lg:h-screen p-[3.2rem] lg:p-[6.4rem] flex flex-col lg:flex-row items-start lg:items-center justify-center lg:justify-between lg:gap-[6.4rem]">
+    <section className="relative w-full h-screen p-[3.2rem] lg:p-[6.4rem] flex flex-col lg:flex-row items-start lg:items-center justify-center lg:justify-between lg:gap-[6.4rem]">
       <div className="w-fit flex flex-col justify-center gap-[3.2rem]">
         <LineAndText text="KNOW ABOUT US" />
 
@@ -26,17 +23,7 @@ const HomeAboutUs = () => {
               r the glory of God.
             </p>
           </div>
-          <ButtonCta
-            text="Read More"
-            link="#"
-            background_color={button_bg}
-            background_color_hover={button_bg_hover}
-            padding_x="2.4rem"
-            padding_y="2.4rem"
-            font_weight="bold"
-            font_color="black"
-            border_color="#747474"
-          />
+          
         </div>
       </div>
 
@@ -50,7 +37,7 @@ const HomeAboutUs = () => {
         />
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default HomeAboutUs;
+export default HomeEducationCrisis

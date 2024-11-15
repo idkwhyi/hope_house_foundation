@@ -29,7 +29,7 @@ const NavLogo = () => {
         width={imageSize}
         height={imageSize}
       />
-      <span className="jakarta-medium text-[1.6rem] lg:text-[2rem]">Hope House Foundation</span>
+      <span className="jakarta-bold lg:jakarta-medium text-[2rem] lg:text-[2rem]">Hope House Foundation</span>
     </div>
   );
 };

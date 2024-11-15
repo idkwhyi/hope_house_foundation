@@ -75,7 +75,7 @@ const NavBar = () => {
           handleClicked={handleToggleSidebar}
         />
         {sidebarStatus && (
-          <ul className="absolute w-screen h-screen top-0 left-0 mt-[6rem] flex flex-col items-end justify-start pt-4 gap-4 jakarta-medium bg-main-bg">
+          <ul className="absolute w-screen h-screen top-0 left-0 mt-[6rem] flex flex-col items-end justify-start pt-5 gap-4 jakarta-medium bg-main-bg">
             <li className="w-full flex items-center justify-center">
               <ButtonLinkMobile
                 link="#"
