@@ -10,7 +10,7 @@ const HomeEducationCrisis = () => {
       <LineAndText text="EDUCATION CRISIS" />
 
       {/* EDU CRISIS 1 */}
-      <div className="w-full h-max flex flex-col lg:flex-row gap-[3.2rem] lg:gap-[8rem] py-[6.4rem]">
+      <div className="w-full h-max flex flex-col lg:flex-row gap-[3.2rem] lg:gap-[8rem] py-[3.2rem] lg:py-[6.4rem]">
         {/* image container */}
         <div className="relative lg:min-w-[43.5rem] w-full lg:w-[43.5rem] h-[30rem] lg:h-[46rem] rounded-lg px-[3.2rem]">
           <Image
@@ -54,7 +54,7 @@ const HomeEducationCrisis = () => {
       </div>
 
       {/* EDU CRISIS 2 */}
-      <div className="w-full h-max flex flex-col-reverse lg:flex-row gap-[3.2rem] lg:gap-[8rem] py-[6.4rem]">
+      <div className="w-full h-max flex flex-col-reverse lg:flex-row gap-[3.2rem] lg:gap-[8rem] py-[3.2rem] lg:py-[6.4rem]">
 
         {/* content 2 container */}
         <div className="w-full flex flex-col items-center justify-between text-[1.8rem] gap-[3.2rem]">
