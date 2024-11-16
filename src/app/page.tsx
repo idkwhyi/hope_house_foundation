@@ -1,6 +1,7 @@
 import HomeHero from "@/components/hero/HomeHero";
 import NavBar from "@/components/navbar/NavBar";
 import HomeAboutUs from "./HomeAboutUs";
+import HomeEducationCrisis from "./HomeEducationCrisis";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
         <HomeHero/>
         {/* know about us section */}
         <HomeAboutUs/>
+        <HomeEducationCrisis/>
       </main>
     </>
   );

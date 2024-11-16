@@ -7,7 +7,7 @@ const HomeAboutUs = () => {
   const button_bg = "#a3cfba";
   const button_bg_hover = "#8FC0A9";
   return (
-    <section className="relative w-full h-max lg:h-screen p-[3.2rem] lg:p-[6.4rem] flex flex-col lg:flex-row items-start lg:items-center justify-center lg:justify-between lg:gap-[6.4rem]">
+    <section className="relative w-full h-max lg:h-screen p-[3.2rem] py-[6.4rem] lg:p-[6.4rem] flex flex-col lg:flex-row items-start lg:items-center justify-center lg:justify-between lg:gap-[6.4rem]">
       <div className="w-fit flex flex-col justify-center gap-[3.2rem]">
         <LineAndText text="KNOW ABOUT US" />
 
@@ -40,7 +40,7 @@ const HomeAboutUs = () => {
         </div>
       </div>
 
-      <div className="relative hidden lg:block w-[50rem] h-[55rem] bg-red-300 rounded-lg">
+      <div className="relative hidden lg:block w-[50rem] h-[55rem] rounded-lg">
         <Image
           src={"/images/test.jpg"}
           alt="logo"

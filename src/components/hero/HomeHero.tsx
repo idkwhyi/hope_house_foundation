@@ -33,10 +33,10 @@ const HomeHero = () => {
           />
         </div>
 
-        <div className="w-full flex justify-between items-center gap-4 roboto-medium text-[1.8rem] text-white">
-          <span>first</span>
+        <div className="w-full flex flex-col lg:flex-row justify-between items-center gap-5 roboto-medium text-[1.4rem] lg:text-[1.8rem] text-white">
+          <span className="w-max min-w-max ">100 children under our care</span>
           <hr className="w-full border-t-1 border-solid border-white my-6" />
-          <span>first</span>
+          <span className="w-max min-w-max">50 donation collected</span>
         </div>
 
       </div>
