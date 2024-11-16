@@ -26,7 +26,7 @@ const NavBar = () => {
     <header className="mb-[6rem] bg-none">
       {/* Desktop NavBar */}
       <nav
-        className={`${tailwind_styling} hidden lg:flex lg:px-12 py-0 items-center justify-between bg-white_ghost`}
+        className={`${tailwind_styling} hidden lg:flex lg:px-12 py-0 items-center justify-between bg-faded-gray`}
       >
         <NavLogo />
         <ul className="w-fit gap-6 flex items-center justify-between jakarta-medium">
