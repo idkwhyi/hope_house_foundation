@@ -24,7 +24,7 @@ const HomeEducationCrisis = () => {
 
         {/* content 1 container */}
         <div className="w-full flex flex-col items-center justify-between text-[1.8rem] gap-[3.2rem]">
-          <h3 className="merri-bold text-[4.8rem]">
+          <h3 className="merri-bold text-[4rem] lg:text-[4.8rem]">
             Over 4 Million Children not in School.
           </h3>
 
@@ -34,7 +34,7 @@ const HomeEducationCrisis = () => {
             need and involving compassionate individuals.
           </p>
 
-          <div className="w-full flex items-start py-[2.3rem] lg:py-0 lg:items-center justify-start gap-[6.4rem] text-[1.6rem] jakarta-regular bg-red-200">
+          <div className="w-full flex items-start py-[2.3rem] lg:py-0 lg:items-center justify-start gap-[6.4rem] text-[1.6rem] jakarta-regular">
             <div className="w-fit">
               <h4 className="jakarta-bold text-[3.2rem] lg:text-[4.8rem]">4.1 Million</h4>
               <p>Not in school</p>
@@ -58,7 +58,7 @@ const HomeEducationCrisis = () => {
 
         {/* content 2 container */}
         <div className="w-full flex flex-col items-center justify-between text-[1.8rem] gap-[3.2rem]">
-          <h3 className="merri-bold text-[4.8rem] w-full">
+          <h3 className="merri-bold text-[4rem] lg:text-[4.8rem] w-full">
           Education Inequality Crisis.
           </h3>
 
@@ -68,7 +68,7 @@ const HomeEducationCrisis = () => {
 
           <div className="w-full flex items-center justify-start gap-[6.4rem] text-[1.6rem] jakarta-regular">
             <div className="w-fit">
-              <h4 className="jakarta-bold text-[4.8rem]">74% Students</h4>
+              <h4 className="jakarta-bold text-[3.2rem] lg:text-[4.8rem]">74% Students</h4>
               <p>Forced to stop due to lack of  funds.</p>
             </div>
           </div>
