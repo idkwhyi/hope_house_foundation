@@ -8,7 +8,7 @@ const HomeHero = () => {
 
   return (
     <section
-      className="relative w-full h-screen bg-cover bg-center"
+      className="relative w-full h-screen bg-cover bg-center py-[6.4rem] lg:py-0"
       style={{ backgroundImage: `url(${heroImage.src})` }} // Correctly referencing the imported image
     >
       <div className="absolute inset-0 bg-black opacity-40"></div>
