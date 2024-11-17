@@ -5,7 +5,7 @@ import { ButtonLink } from "../button/ButtonLink";
 import { ButtonLinkMobile } from "../button/ButtonLinkMobile";
 import { ButtonCta } from "../button/ButtonCta";
 import HamburgerButton from "../hamburger_menu/HamburgerButton";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const NavBar = () => {
   const tailwind_styling =
@@ -21,6 +21,20 @@ const NavBar = () => {
   const handleToggleSidebar = (): void => {
     setSidebarStatus(!sidebarStatus);
   };
+
+  // Handle body scrolling
+  useEffect(() => {
+    if (sidebarStatus) {
+      document.body.style.overflow = "hidden"; // Disable scrolling
+    } else {
+      document.body.style.overflow = "auto"; // Enable scrolling
+    }
+
+    // Cleanup on unmount or when `sidebarStatus` changes
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [sidebarStatus]);
 
   return (
     <header className="mb-[6rem] bg-none">
