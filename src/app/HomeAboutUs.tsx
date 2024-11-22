@@ -9,6 +9,7 @@ const HomeAboutUs = () => {
   return (
     <section className="relative w-full h-max lg:h-screen p-[3.2rem] py-[6.4rem] lg:p-[6.4rem] flex flex-col lg:flex-row items-start lg:items-center justify-center lg:justify-between lg:gap-[6.4rem]">
       <div className="w-fit flex flex-col justify-center gap-[3.2rem]">
+        
         <LineAndText text="KNOW ABOUT US" />
 
         <div className="relative w-full h-[30rem] block lg:hidden px-[3.2rem]">

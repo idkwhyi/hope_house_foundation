@@ -1,7 +1,6 @@
 import { gsap } from "gsap/gsap-core";
 
 
-
 //? MENU ANIMATION
 interface MenuAnimationProps {
   autoAlpha: number;
@@ -23,7 +22,7 @@ export const revealMenu = (): gsap.core.Timeline => {
   } = {
     autoAlpha: 1,
     y: 0,
-    stagger: 0.2,
+    stagger: 0.,
     ease: "expo.out",
     duration: 2,
   };
@@ -82,7 +81,7 @@ export const animateTitle = (): gsap.core.Timeline => {
     autoAlpha: 0,
   };
 
-  tl.to("[data-hero-line]", lineAnimation)
+  tl.to("[data-hero-line]", lineAnimation, "-=1.5")
     .fromTo(
       "[data-title-first]",
       titleFromProps,
