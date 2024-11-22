@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { useState } from "react";
 
-interface ButtonCtaInterface {
+interface ButtonCtaInterface extends React.HTMLAttributes<HTMLButtonElement> {
   link: string;
   text: string;
   background_color: string; 
@@ -13,6 +13,7 @@ interface ButtonCtaInterface {
   font_weight: string;
   font_color: string;
   border_color: string;
+  className?: string;  // Make className optional
 }
 
 export function ButtonCta({ 
@@ -24,14 +25,17 @@ export function ButtonCta({
   padding_y,
   font_weight,
   font_color,
-  border_color
+  border_color,
+  className = '',  // Default to empty string
+  ...props  // Spread operator to catch all other props
 }: ButtonCtaInterface) {
-
   const [isHovered, setIsHovered] = useState(false);
+
   return (
     <Link href={link} passHref className="w-fit h-fit">
       <Button 
-        className={`text-[1.6rem] jakarta-${font_weight} hover:bg-${background_color_hover} rounded-md`}
+        {...props}  // Spread all additional props here
+        className={`text-[1.6rem] jakarta-${font_weight} hover:bg-${background_color_hover} rounded-md ${className}`}
         style={{ 
           backgroundColor: isHovered ? background_color_hover : background_color, 
           paddingInline: padding_x, 
@@ -39,6 +43,7 @@ export function ButtonCta({
           color: font_color,
           border: '1px solid',
           borderColor: border_color,
+          ...props.style  // Merge any additional styles
         }}
         onMouseLeave={() => setIsHovered(false)}
         onMouseOver={() => setIsHovered(true)}  

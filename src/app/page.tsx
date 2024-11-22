@@ -1,5 +1,5 @@
 "use client";
-import HomeHero from "@/components/hero/HomeHero";
+import Hero from "@/components/Hero";
 import NavBar from "@/components/navbar/NavBar";
 import HomeAboutUs from "./HomeAboutUs";
 import HomeEducationCrisis from "./HomeEducationCrisis";
@@ -30,7 +30,7 @@ export default function Home() {
           {/* header is included inside navbar */}
           <NavBar />
           <main className="flex flex-col h-fit">
-            <HomeHero />
+            <Hero />
             {/* know about us section */}
             <HomeAboutUs />
             <HomeEducationCrisis />
