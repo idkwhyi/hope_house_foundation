@@ -15,7 +15,7 @@ const LineAndText = ({ text }: LineAndTextInterface) => {
     // Load GSAP and ScrollTrigger only on client side
     const initAnimation = async () => {
       // Dynamic import of GSAP
-      const { gsap } = await import('gsap');
+      const gsap = await import('gsap');
       const { ScrollTrigger } = await import('gsap/dist/ScrollTrigger');
       
       // Register ScrollTrigger
