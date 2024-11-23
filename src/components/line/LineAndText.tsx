@@ -7,54 +7,58 @@ interface LineAndTextInterface {
 }
 
 const LineAndText = ({ text }: LineAndTextInterface) => {
-  const containerRef = useRef<HTMLDivElement>(null);
-  const lineRef = useRef<HTMLDivElement>(null);
-  const textRef = useRef<HTMLHeadingElement>(null);
+  const containerRef = useRef<HTMLDivElement | null>(null);
+  const lineRef = useRef<HTMLDivElement | null>(null);
+  const textRef = useRef<HTMLHeadingElement | null>(null);
 
   useEffect(() => {
-    // Load GSAP and ScrollTrigger only on client side
+    let ctx: gsap.Context | undefined;
+
     const initAnimation = async () => {
-      // Dynamic import of GSAP
-      const gsap = await import('gsap');
-      const { ScrollTrigger } = await import('gsap/dist/ScrollTrigger');
-      
-      // Register ScrollTrigger
-      gsap.registerPlugin(ScrollTrigger);
+      try {
+        const { default: gsap } = await import('gsap');
+        const { ScrollTrigger } = await import('gsap/dist/ScrollTrigger');
+        
+        gsap.registerPlugin(ScrollTrigger);
 
-      const container = containerRef.current;
-      const line = lineRef.current;
-      const textElement = textRef.current;
+        const container = containerRef.current;
+        const line = lineRef.current;
+        const textElement = textRef.current;
 
-      if (!container || !line || !textElement) return;
+        if (!container || !line || !textElement) return;
 
-      // Create context
-      const ctx = gsap.context(() => {
-        // Set initial state
-        gsap.set([line, textElement], {
-          opacity: 0,
-          x: -50,
-        });
+        // Create context
+        ctx = gsap.context(() => {
+          // Set initial state
+          gsap.set([line, textElement], {
+            opacity: 0,
+            x: -50,
+          });
 
-        // Create animation
-        gsap.to([line, textElement], {
-          opacity: 1,
-          x: 0,
-          duration: 1,
-          stagger: 0.2,
-          ease: "power3.out",
-          scrollTrigger: {
-            trigger: container,
-            start: "top 80%",
-            toggleActions: "play none none reverse"
-          }
-        });
-      }, containerRef);
-
-      // Return cleanup function
-      return () => ctx.revert();
+          // Create animation
+          gsap.to([line, textElement], {
+            opacity: 1,
+            x: 0,
+            duration: 1,
+            stagger: 0.2,
+            ease: "power3.out",
+            scrollTrigger: {
+              trigger: container,
+              start: "top 80%",
+              toggleActions: "play none none reverse"
+            }
+          });
+        }, containerRef);
+      } catch (error) {
+        console.error('Error initializing animation:', error);
+      }
     };
 
     initAnimation();
+
+    return () => {
+      if (ctx) ctx.revert();
+    };
   }, []);
 
   return (
@@ -64,13 +68,13 @@ const LineAndText = ({ text }: LineAndTextInterface) => {
     >
       <div 
         ref={lineRef}
-        className="opacity-0" // Initial state in CSS
+        className="opacity-0"
       >
         <Line LineColor="black" />
       </div>
       <h2 
         ref={textRef}
-        className="jakarta-bold text-[1.6rem] opacity-0" // Initial state in CSS
+        className="jakarta-bold text-[1.6rem] opacity-0"
       >
         {text}
       </h2>
