@@ -1,50 +1,64 @@
-/* This file contain all animation when scrolling:
-  - items animation on scroll
+import { useEffect } from "react";
 
+// ? Text reveal animation
+/*TODO: to use this animation: 
+1. import useTextReveal
+2. call the useTextReveal function inside the component
+3. add this data-text-reveal properties in the element that you want to animate
 */
+const initTextReveal = async () => {
+  try {
+    const { default: gsap } = await import("gsap");
+    const { ScrollTrigger } = await import("gsap/dist/ScrollTrigger");
 
-import gsap from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
+    gsap.registerPlugin(ScrollTrigger);
 
-gsap.registerPlugin(ScrollTrigger);
+    // Get all elements with data-text-reveal attribute
+    const textElements = document.querySelectorAll("[data-text-reveal]");
 
-// ? Appear animation from left
-/* To use this animation:
-  - element must have x declared in minus
-*/
-interface RevealFromLeftProps {
-  autoAlpha: number;
-  x: number
-}
+    textElements.forEach((element) => {
+      // Create a wrapper div
+      const wrapper = document.createElement("div");
+      wrapper.style.overflow = "hidden";
+      wrapper.style.display = "inline-block"; // Maintain inline flow
 
-export const revealFromLeft = (): gsap.core.Timeline => {
-  const tl: gsap.core.Timeline = gsap.timeline({
-    scrollTrigger: {
-      trigger: "[data-show-left-item]", // Parent component or specific element to observe
-      start: "80% top", // When 80% of the viewport height hits the bottom of the trigger
-      toggleActions: "play none none none", // Play animation once
-      markers: true, // Set to true for debugging
-    },
-  });
+      // Clone original element's classes
+      const originalClasses = element.getAttribute("class");
+      if (originalClasses) {
+        wrapper.setAttribute("class", originalClasses);
+        element.removeAttribute("class");
+      }
 
-  const fromProps: RevealFromLeftProps = {
-    autoAlpha: 0,
-    x: -32,
-  };
+      // Move the element inside the wrapper
+      element.parentNode?.insertBefore(wrapper, element);
+      wrapper.appendChild(element);
 
-  const toProps: RevealFromLeftProps & {
-    stagger: number;
-    ease: string;
-    duration: number;
-  } = {
-    autoAlpha: 1,
-    x: 0,
-    stagger: 0.2,
-    ease: "expo.out",
-    duration: 2,
-  };
+      // Set initial state
+      gsap.set(element, {
+        yPercent: 100,
+        opacity: 0,
+      });
 
-  tl.fromTo("[data-show-left-item]", fromProps, toProps);
+      // Create the reveal animation
+      gsap.to(element, {
+        yPercent: 0,
+        opacity: 1,
+        duration: 1.2,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: wrapper,
+          start: "top 80%",
+          toggleActions: "play none none none",
+        },
+      });
+    });
+  } catch (error) {
+    console.error("Error initializing text reveal animation:", error);
+  }
+};
 
-  return tl;
+export const useTextReveal = () => {
+  useEffect(() => {
+    initTextReveal();
+  }, []);
 };

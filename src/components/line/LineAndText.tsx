@@ -45,7 +45,7 @@ const LineAndText = ({ text }: LineAndTextInterface) => {
             scrollTrigger: {
               trigger: container,
               start: "top 80%",
-              toggleActions: "play none none reverse"
+              toggleActions: "play none none none"
             }
           });
         }, containerRef);
