@@ -35,7 +35,7 @@ const initTextReveal = async () => {
 
       // Set initial state
       gsap.set(element, {
-        yPercent: 100,
+        yPercent: 50,
         opacity: 0,
       });
 
@@ -44,7 +44,7 @@ const initTextReveal = async () => {
         yPercent: 0,
         opacity: 1,
         duration: 1.2,
-        ease: "power3.out",
+        ease: "power4.out",
         scrollTrigger: {
           trigger: wrapper,
           start: "top 80%",
