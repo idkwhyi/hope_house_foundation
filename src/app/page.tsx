@@ -8,6 +8,7 @@ import Loader from "@/components/Loader";
 import { useLayoutEffect, useState } from "react";
 import { gsap } from "gsap";
 import HomeWhatWeDo from "./HomeWhatWeDo";
+import ContributeWithUs from "@/components/Actions/ContributeWithUs";
 
 export default function Home() {
   const [loaderFinished, setLoaderFinished] = useState(false);
@@ -36,7 +37,9 @@ export default function Home() {
             <HomeAboutUs />
             <HomeEducationCrisis />
             <HomeWhatWeDo/>
+            <ContributeWithUs/>
           </main>
+
         </>
       ) : (
         <Loader timeline={timeline} />

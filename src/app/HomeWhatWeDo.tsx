@@ -5,7 +5,7 @@ import Action from "@/components/Actions";
 
 const HomeWhatWeDo = () => {
   return (
-    <section className="bg-gray-50 relative w-full h-full p-[3.2rem] py-[6.4rem] lg:p-[6.4rem] flex flex-col items-start justify-between gap-0 ">
+    <section className=" relative w-full h-full p-[3.2rem] py-[6.4rem] lg:p-[6.4rem] flex flex-col items-start justify-between gap-0 ">
       <LineAndText text="WHAT WE DO" />
       <div className="w-full h-fit flex flex-col gap-[3.2rem] lg:gap-[6.4rem] lg:pl-[6.4rem] pt-[3.2rem] lg:pt-[6.4rem] justify-center">
         <div className="w-full">

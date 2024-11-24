@@ -36,7 +36,7 @@ const HomeAboutUs = () => {
             background_color_hover={button_bg_hover}
             padding_x="2.4rem"
             padding_y="2.4rem"
-            font_weight="bold"
+            font_weight="medium"
             font_color="black"
             border_color="#747474"
           />
