@@ -34,7 +34,7 @@ const Hero = () => {
       <div className="p-6 lg:px-[6.4rem] lg:py-[7.2rem] relative z-10 w-full h-full flex flex-col items-center justify-between">
         
         <div className="flex flex-col items-center lg:items-start justify-center w-full max-w-full h-full max-h-full text-white text-center gap-14 p-12">
-          <h1 data-menu-item data-hidden className="text-white merri-black text-[4rem] lg:text-[6.4rem] lg:text-left">
+          <h1 data-menu-item data-hidden className="text-white jakarta-bold text-[4rem] lg:text-[6.4rem] lg:text-left">
             Indonesia <br />
             Hope House <br />
             Foundation

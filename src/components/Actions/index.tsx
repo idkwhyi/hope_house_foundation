@@ -1,6 +1,6 @@
 import React, { FC } from "react";
-import { ButtonBorderNoBg } from "../button/ButtonBorderNoBg";
 import { ButtonWithArrow } from "../button/ButtonWithArrow";
+import { NormalButton } from "../button/Button";
 
 type ActionProps = {
   title: string;
@@ -33,7 +33,7 @@ const Action: FC<ActionProps> = ({
     <article className="relative min-h-[40vh] lg:min-h-[400px] w-full overflow-hidden rounded-[2rem] group">
       {/* Background Image with Overlay */}
       <div
-        className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat transition-transform duration-300 group-hover:scale-105"
+        className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${imageUrl})` }}
       />
 
@@ -51,7 +51,7 @@ const Action: FC<ActionProps> = ({
 
         {/* Buttons Container */}
         <div className="w-full flex items-center pt-[1.6rem] gap-[2.4rem]">
-          <ButtonBorderNoBg link={readMoreLink} text="Read More" color={buttonColor}/>
+          <NormalButton text="Read More" url={readMoreLink} />
           <ButtonWithArrow link={donationLink} text="Donate Now" color={buttonColor}/>
         </div>
 

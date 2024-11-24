@@ -35,7 +35,7 @@ const initTextReveal = async () => {
 
       // Set initial state
       gsap.set(element, {
-        yPercent: 50,
+        yPercent: 0,
         opacity: 0,
       });
 
@@ -60,5 +60,65 @@ const initTextReveal = async () => {
 export const useTextReveal = () => {
   useEffect(() => {
     initTextReveal();
+  }, []);
+};
+
+
+// ? smoother text reveal animation
+const smoothReveal = async () => {
+  try {
+    const { default: gsap } = await import("gsap");
+    const { ScrollTrigger } = await import("gsap/dist/ScrollTrigger");
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Get all elements with data-text-reveal attribute
+    const textElements = document.querySelectorAll("[data-smooth-reveal]");
+
+    textElements.forEach((element) => {
+      // Create a wrapper div
+      const wrapper = document.createElement("div");
+      wrapper.style.overflow = "hidden";
+      wrapper.style.display = "inline-block"; // Maintain inline flow
+
+      // Clone original element's classes
+      const originalClasses = element.getAttribute("class");
+      if (originalClasses) {
+        wrapper.setAttribute("class", originalClasses);
+        element.removeAttribute("class");
+      }
+
+      // Move the element inside the wrapper
+      element.parentNode?.insertBefore(wrapper, element);
+      wrapper.appendChild(element);
+
+      // Set initial state
+      gsap.set(element, {
+        color: "rgb(54, 54, 54)",
+        opacity: 0.4,
+
+      });
+
+      // Create the reveal animation
+      gsap.to(element, {
+        color: "black",
+        opacity: 1,
+        duration: 1.5,
+        // ease: "power4.out",
+        scrollTrigger: {
+          trigger: wrapper,
+          start: "top 80%",
+          toggleActions: "play none none none",
+        },
+      });
+    });
+  } catch (error) {
+    console.error("Error initializing text reveal animation:", error);
+  }
+};
+
+export const useSmoothReveal = () => {
+  useEffect(() => {
+    smoothReveal();
   }, []);
 };

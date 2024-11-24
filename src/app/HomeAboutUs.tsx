@@ -2,8 +2,10 @@ import React from "react";
 import { ButtonCta } from "@/components/button/ButtonCta";
 import Image from "next/image";
 import LineAndText from "@/components/line/LineAndText";
+import { useSmoothReveal } from "@/animations/scroll";
 
 const HomeAboutUs = () => {
+  useSmoothReveal()  
   const button_bg = "#a3cfba";
   const button_bg_hover = "#8FC0A9";
   return (
@@ -18,10 +20,10 @@ const HomeAboutUs = () => {
 
         <div className="w-full h-fit flex flex-col gap-[3.2rem] lg:gap-[6.4rem] lg:pl-[6.4rem] justify-center">
           <div className="w-full">
-            <h3 data-text-reveal className="merri-bold bold text-[3.2rem] lg:text-[4.8rem] w-full lg:mb-0 mb-3">
+            <h3 data-smooth-reveal className="merri-bold bold text-[3.2rem] lg:text-[4.8rem] w-full lg:mb-0 mb-3">
               We provide a place for children to develop their talents.
             </h3>
-            <p data-text-reveal className="jakarta-regular text-[1.8rem] w-full ">
+            <p data-smooth-reveal className="jakarta-regular text-[1.8rem] w-full ">
               We educate the next generation as followers of Christ, spreading
               light and hope, so that we can shape children into instruments fo
               r the glory of God.

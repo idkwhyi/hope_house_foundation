@@ -37,7 +37,7 @@ const NavBar = () => {
   }, [sidebarStatus]);
 
   return (
-    <header className="mb-[6rem] bg-none">
+    <header className="mb-[2rem] bg-none">
       {/* Desktop NavBar */}
       <nav
         className={`${tailwind_styling} hidden lg:flex lg:px-12 py-0 items-center justify-between bg-faded-gray backdrop-blur-md`}
