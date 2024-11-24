@@ -54,7 +54,7 @@ const Hero = () => {
         </div>
 
         {/* ? LINE ANIMATION */}
-        <div className="absolute bottom-[0%] lg:bottom-[10%] px-12 -translate-y-[50%] w-full flex flex-col lg:flex-row justify-between items-center gap-5 roboto-medium text-[1.4rem] lg:text-[1.8rem] text-white">
+        <div className="absolute bottom-[0%] lg:bottom-[10%] px-12 -translate-y-[30%] lg:-translate-y-[50%] w-full flex flex-col lg:flex-row justify-between items-center gap-5 roboto-medium text-[1.4rem] lg:text-[1.8rem] text-white">
           <span data-title-first data-hidden className="w-max min-w-max ">100 children under our care</span>
           <hr data-hero-line className="w-full scale-x-0 origin-center border-t-1 border-solid border-white my-6" />
           <span data-title-last data-hidden className="w-max min-w-max">50 donation collected</span>

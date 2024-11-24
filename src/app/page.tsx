@@ -7,6 +7,7 @@ import Loader from "@/components/Loader";
 
 import { useLayoutEffect, useState } from "react";
 import { gsap } from "gsap";
+import HomeWhatWeDo from "./HomeWhatWeDo";
 
 export default function Home() {
   const [loaderFinished, setLoaderFinished] = useState(false);
@@ -34,6 +35,7 @@ export default function Home() {
             {/* know about us section */}
             <HomeAboutUs />
             <HomeEducationCrisis />
+            <HomeWhatWeDo/>
           </main>
         </>
       ) : (

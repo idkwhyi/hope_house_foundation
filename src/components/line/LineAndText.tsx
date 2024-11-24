@@ -1,12 +1,17 @@
 // components/LineAndText.tsx
-import React, { useEffect, useRef } from "react";
+import React, { FC, useEffect, useRef } from "react";
 import Line from "./Line";
 
-interface LineAndTextInterface {
+type LineAndTextInterface = {
   text: string;
 }
 
-const LineAndText = ({ text }: LineAndTextInterface) => {
+/**
+ * Line and Text Component - Displays an action item with title, description, image, and links
+ * @param {string} text - Main text displayed after the line
+*/
+
+const LineAndText: FC<LineAndTextInterface> = ({ text }: LineAndTextInterface) => {
   const containerRef = useRef<HTMLDivElement | null>(null);
   const lineRef = useRef<HTMLDivElement | null>(null);
   const textRef = useRef<HTMLHeadingElement | null>(null);
@@ -74,7 +79,7 @@ const LineAndText = ({ text }: LineAndTextInterface) => {
       </div>
       <h2 
         ref={textRef}
-        className="jakarta-bold text-[1.6rem] opacity-0"
+        className="jakarta-bold tracking-wider text-[1.6rem] opacity-0"
       >
         {text}
       </h2>

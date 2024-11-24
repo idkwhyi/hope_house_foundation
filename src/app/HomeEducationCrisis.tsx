@@ -37,20 +37,20 @@ const HomeEducationCrisis = () => {
           </p>
 
           <div className="w-full flex items-start py-[2.3rem] lg:py-0 lg:items-center justify-start gap-[6.4rem] text-[1.6rem] jakarta-regular">
-            <div className="w-fit">
-              <h4 data-text-reveal className="jakarta-bold text-[3.2rem] lg:text-[4.8rem]">4.1 Million</h4>
-              <p data-text-reveal>Not in school</p>
+            <div data-text-reveal className="w-fit flex flex-col">
+              <h4 className="jakarta-bold text-[3.2rem] lg:text-[4.8rem]">4.1 Million</h4>
+              <p>Not in school</p>
             </div>
-            <div className="w-fit">
-              <h4 data-text-reveal className="jakarta-bold text-[3.2rem] lg:text-[4.8rem]">7-18 Years</h4>
-              <p data-text-reveal>Children and adsolesccent</p>
+            <div data-text-reveal className="w-fit flex flex-col">
+              <h4 className="jakarta-bold text-[3.2rem] lg:text-[4.8rem]">7-18 Years</h4>
+              <p>Children and adsolesccent</p>
             </div>
           </div>
 
           <div className="w-full flex items-center gap-[2.4rem]">
             {/* BUTTON CONTAINER */}
-            <ButtonBorderNoBg link="#" text="Read Articles" font_size="1.6"/>
-            <ButtonWithArrow link="#" text="Donate Now" font_size="1.6"/>
+            <ButtonBorderNoBg link="#" text="Read Articles"/>
+            <ButtonWithArrow link="#" text="Donate Now"/>
           </div>
         </div>
       </div>
@@ -69,16 +69,16 @@ const HomeEducationCrisis = () => {
           </p>
 
           <div className="w-full flex items-center justify-start gap-[6.4rem] text-[1.6rem] jakarta-regular">
-            <div className="w-fit">
-              <h4 data-text-reveal className="jakarta-bold text-[3.2rem] lg:text-[4.8rem]">74% Students</h4>
-              <p data-text-reveal>Forced to stop due to lack of  funds.</p>
+            <div data-text-reveal className="w-fit flex flex-col">
+              <h4 className="jakarta-bold text-[3.2rem] lg:text-[4.8rem]">74% Students</h4>
+              <p>Forced to stop due to lack of  funds.</p>
             </div>
           </div>
 
           <div className="w-full flex items-center gap-[2.4rem]">
             {/* BUTTON CONTAINER */}
-            <ButtonBorderNoBg link="#" text="Read Articles" font_size="1.6"/>
-            <ButtonWithArrow link="#" text="Donate Now" font_size="1.6"/>
+            <ButtonBorderNoBg link="#" text="Read Articl" color="black" />
+            <ButtonWithArrow link="#" text="Donate Now" />
           </div>
         </div>
         {/* image container */}
