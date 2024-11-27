@@ -1,13 +1,13 @@
 "use client";
 
-import Hero from "@/components/Hero";
+import HomeHero from "@/components/hero/HomeHero";
 import NavBar from "@/components/navbar/NavBar";
 import HomeAboutUs from "./HomeAboutUs";
 import HomeEducationCrisis from "./HomeEducationCrisis";
 import Loader from "@/components/Loader";
 import Footer from "@/components/Footer";
 import HomeWhatWeDo from "./HomeWhatWeDo";
-import ContributeWithUs from "@/components/Actions/ContributeWithUs";
+import ContributeWithUs from "@/components/actions/ContributeWithUs";
 
 import { useLayoutEffect, useState } from "react";
 import { gsap } from "gsap";
@@ -34,14 +34,14 @@ export default function Home() {
           {/* header is included inside navbar */}
           <NavBar />
           <main className="flex flex-col h-fit">
-            <Hero />
+            <HomeHero />
             {/* know about us section */}
             <HomeAboutUs />
             <HomeEducationCrisis />
             <HomeWhatWeDo />
             <ContributeWithUs />
           </main>
-          <Footer/>
+          <Footer />
         </>
       ) : (
         <Loader timeline={timeline} />

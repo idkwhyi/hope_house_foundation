@@ -1,9 +1,15 @@
-import React from 'react'
+import React, { FC } from "react";
 
-const FooterListTitle = () => {
-  return (
-    <div>FooterListTitle</div>
-  )
-}
+type FooterListTitleType = {
+  text: string;
+};
 
-export default FooterListTitle
+/**
+ * Footer List Title Component
+ * @param {string} text - Title of footer list
+ */
+
+const FooterListTitle: FC<FooterListTitleType> = ({ text }) => {
+  return <h3 className="roboto-bold text-[1.4rem]">{text}</h3>;
+};
+export default FooterListTitle;

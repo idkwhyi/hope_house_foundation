@@ -12,7 +12,8 @@ const config: Config = {
   		colors: {
   		  'faded-gray': 'rgba(250, 250, 250, 0.93)',
         'main-bg': 'rgb(250, 250, 250)',
-        'custom-red': 'FF6B6B',
+        'custom-red': '#FF6B6B',
+        'text-gray': '#969899',
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {

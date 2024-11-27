@@ -1,6 +1,6 @@
 import React from "react";
 import LineAndText from "@/components/line/LineAndText";
-import Action from "@/components/Actions";
+import Action from "@/components/actions/Action";
 
 
 const HomeWhatWeDo = () => {

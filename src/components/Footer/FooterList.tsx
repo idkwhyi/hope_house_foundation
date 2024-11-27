@@ -7,7 +7,7 @@ type FooterListType = {
 };
 
 /**
- * Footer list component
+ * Footer List Props
  * @param {string} text - The main text
  * @param {string} url - URL for redirecting to other page
  */
@@ -15,7 +15,12 @@ type FooterListType = {
 const FooterList: FC<FooterListType> = ({ text, url }) => {
   return (
     <li className="list-none">
-      <Link href={url}>{text}</Link>
+      <Link
+        className="roboto-regular hover:underline text-text-gray hover:text-white text-[1.2rem]"
+        href={url}
+      >
+        {text}
+      </Link>
     </li>
   );
 };

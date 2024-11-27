@@ -1,10 +1,9 @@
 import React, { useEffect, useRef } from "react";
-import heroImage from "../../../public/images/hero_img.jpeg";
 import { ButtonCta } from "../button/ButtonCta";
 import { gsap } from "gsap";
 import { revealMenu, animateTitle } from "./animations";
 
-const Hero = () => {
+const HomeHero = () => {
   const button_bg = "#a3cfba";
   const button_bg_hover = "#8FC0A9";
 
@@ -24,7 +23,7 @@ const Hero = () => {
   return (
     <section
       className="relative w-full h-screen bg-cover bg-center py-[6.4rem] lg:py-0"
-      style={{ backgroundImage: `url(${heroImage.src})` }} // Correctly referencing the imported image
+      style={{ backgroundImage: `url(/images/hero_img.jpeg)` }}
       ref={heroRef}
     >
       {/* Background Layer: No animation needed*/}
@@ -64,4 +63,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default HomeHero;
