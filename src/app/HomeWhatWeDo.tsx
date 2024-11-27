@@ -19,7 +19,7 @@ const HomeWhatWeDo = () => {
         </div>
       </div>
 
-      <div className="mt-[2.4rem] h-fit lg:mt-[6.4rem] grid lg:grid-cols-2 gap-6 grid-cols-1 lg:px-[6.4rem]">
+      <div className="mt-[2.4rem] h-fit lg:mt-[6.4rem] grid lg:grid-cols-2 gap-10 grid-cols-1 lg:px-[6.4rem]">
         <Action 
           title="HBB Christian Schools"
           body="We currently have 12 schools spread across Indonesia. We encourage good education  as well as low tuition fees due to their financial disability."
