@@ -7,7 +7,7 @@ import HomeEducationCrisis from "./HomeEducationCrisis";
 import Loader from "@/components/Loader";
 import Footer from "@/components/Footer";
 import HomeWhatWeDo from "./HomeWhatWeDo";
-import ContributeWithUs from "@/components/actions/ContributeWithUs";
+import ContributeWithUs from "@/components/Actions/ContributeWithUs";
 
 import { useLayoutEffect, useState } from "react";
 import { gsap } from "gsap";
