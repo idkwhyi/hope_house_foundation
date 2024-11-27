@@ -1,5 +1,4 @@
 import React from 'react'
-import FooterList from './FooterList'
 
 const Footer = () => {
   return (
@@ -8,7 +7,6 @@ const Footer = () => {
       <div>
         <h3>Pages</h3>
         <ul>
-          <FooterList url="#" text='testing'/>
         </ul>
       </div>
       <div>

@@ -1,6 +1,4 @@
 "use client";
-import { useLayoutEffect, useState } from "react";
-import { gsap } from "gsap";
 
 import Hero from "@/components/Hero";
 import NavBar from "@/components/navbar/NavBar";
@@ -10,6 +8,9 @@ import Loader from "@/components/Loader";
 import Footer from "@/components/Footer";
 import HomeWhatWeDo from "./HomeWhatWeDo";
 import ContributeWithUs from "@/components/Actions/ContributeWithUs";
+
+import { useLayoutEffect, useState } from "react";
+import { gsap } from "gsap";
 
 export default function Home() {
   const [loaderFinished, setLoaderFinished] = useState(false);
