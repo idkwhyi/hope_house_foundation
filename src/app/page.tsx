@@ -41,7 +41,7 @@ export default function Home() {
             <HomeWhatWeDo />
             <ContributeWithUs />
           </main>
-          {/* Footer */}
+          <Footer/>
         </>
       ) : (
         <Loader timeline={timeline} />
