@@ -1,6 +1,6 @@
 "use client";
 
-import HomeHero from "@/components/hero/HomeHero";
+import HomeHero from "@/components/Hero/HomeHero";
 import NavBar from "@/components/navbar/NavBar";
 import HomeAboutUs from "./HomeAboutUs";
 import HomeEducationCrisis from "./HomeEducationCrisis";
