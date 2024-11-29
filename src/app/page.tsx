@@ -30,7 +30,7 @@ export default function Home() {
   return (
     <>
       {loaderFinished ? (
-        <>
+        <main>
           {/* header is included inside navbar */}
           <NavBar />
           <main className="flex flex-col h-fit">
@@ -42,7 +42,7 @@ export default function Home() {
             <ContributeWithUs />
           </main>
           <Footer />
-        </>
+        </main>
       ) : (
         <Loader timeline={timeline} />
       )}

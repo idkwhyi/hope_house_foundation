@@ -21,7 +21,7 @@ const HomeHero = () => {
   }, []);
 
   return (
-    <section
+    <header
       className="relative w-full h-screen bg-cover bg-center py-[6.4rem] lg:py-0"
       style={{ backgroundImage: `url(/images/hero_img.jpeg)` }}
       ref={heroRef}
@@ -59,7 +59,7 @@ const HomeHero = () => {
           <span data-title-last data-hidden className="w-max min-w-max">50 donation collected</span>
         </div>
       </div>
-    </section>
+    </header>
   );
 };
 
