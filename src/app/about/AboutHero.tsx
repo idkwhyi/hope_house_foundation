@@ -20,7 +20,7 @@ const AboutHero = () => {
       {/* Background Putih (50% bawah) */}
       <div className="absolute z-0 bottom-0 left-0 w-full h-1/2 bg-bg-green"></div>
       {/* first hero content */}
-      <div className="w-full z-10 flex flex-col lg:flex-row items-center justify-between gap-[6.4rem]">
+      <div className="w-full z-10 flex flex-col lg:flex-row items-center justify-between gap-[6.4rem] pt-[3.2rem] lg:py-[3.2rem]">
         <div className="w-full lg:w-[50vw]">
           <LineAndText text="know about us" />
           <h1 className="merri-bold text-[4.8rem]">
@@ -42,7 +42,7 @@ const AboutHero = () => {
         </div>
       </div>
       {/* second hero content */}
-      <div className="relative w-full h-[30rem] block ">
+      <div className="relative w-full h-[35rem] block ">
         <Image
           src={"/images/children.png"}
           alt="logo"

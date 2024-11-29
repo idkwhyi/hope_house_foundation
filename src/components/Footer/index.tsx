@@ -34,8 +34,8 @@ const Footer = () => {
       <div className={groupContainerStyle}>
         <FooterListTitle text="PAGES" />
         <ul className={listContainerStyle}>
-          <FooterList text="Home" url="" />
-          <FooterList text="About Us" url="" />
+          <FooterList text="Home" url="/" />
+          <FooterList text="About Us" url="about" />
           <FooterList text="Contact" url="" />
           <FooterList text="Donation" url="" />
         </ul>
