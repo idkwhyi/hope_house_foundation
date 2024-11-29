@@ -1,3 +1,4 @@
+'use client'
 // components/LineAndText.tsx
 import React, { FC, useEffect, useRef } from "react";
 import Line from "./Line";
