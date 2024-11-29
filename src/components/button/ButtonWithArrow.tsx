@@ -35,7 +35,7 @@ export const ButtonWithArrow: FC<ButtonWithArrowType> = ({
         style={{ fontSize: `${font_size}rem` }}
         className={`w-full h-fit px-8 py-6 flex rounded-md items-center justify-between text-left text-${color}`}
       >
-        <span className={`text-${color}`}>{text}</span>
+        <span className={`text-${color}`}>{text} &#8250;</span>
 
         {/* <Image src={"/images/next.png"} alt="logo" width={20} height={20} /> */}
         {/* <p className={`text-${color} bg-red-50 w-fit h-fit items-center justify-center `}>&#8250;</p> */}
