@@ -31,7 +31,7 @@ export default function Home() {
     <>
       {loaderFinished ? (
         <main>
-          {/* header is included inside navbar */}
+          {/* header tag is included inside navbar */}
           <NavBar />
           <main className="flex flex-col h-fit">
             <HomeHero />
@@ -41,6 +41,7 @@ export default function Home() {
             <HomeWhatWeDo />
             <ContributeWithUs />
           </main>
+          {/* footer tag is included inside footer */}
           <Footer />
         </main>
       ) : (
@@ -49,3 +50,77 @@ export default function Home() {
     </>
   );
 }
+
+
+// SOME MODIFICATION ABOUT LOADING ANIMATION IF NEEDED
+// "use client";
+// import { useLayoutEffect, useState, useEffect } from "react";
+// import { gsap } from "gsap";
+// import HomeHero from "@/components/hero/HomeHero";
+// import NavBar from "@/components/navbar/NavBar";
+// import HomeAboutUs from "./HomeAboutUs";
+// import HomeEducationCrisis from "./HomeEducationCrisis";
+// import Loader from "@/components/Loader";
+// import HomeWhatWeDo from "./HomeWhatWeDo";
+// import ContributeWithUs from "@/components/actions/ContributeWithUs";
+// import Footer from "@/components/Footer";
+// export default function Home() {
+//   const [loaderFinished, setLoaderFinished] = useState(false);
+//   const [showLoader, setShowLoader] = useState(false);
+//   const [timeline, setTimeline] = useState<gsap.core.Timeline | null>(null);
+//   useEffect(() => {
+//     // Cek apakah sudah pernah mengunjungi website
+//     const hasVisited = localStorage.getItem('website-visited');
+//     if (!hasVisited) {
+//       // Belum pernah mengunjungi, tampilkan loader
+//       setShowLoader(true);
+//       // Set flag bahwa website sudah dikunjungi
+//       localStorage.setItem('website-visited', 'true');
+//     } else {
+//       // Sudah pernah mengunjungi, langsung tampilkan konten
+//       setLoaderFinished(true);
+//     }
+//     // Tambahkan event listener untuk mendeteksi saat browser ditutup
+//     const handleBeforeUnload = () => {
+//       // Hapus flag kunjungan saat browser ditutup
+//       localStorage.removeItem('website-visited');
+//     };
+//     window.addEventListener('beforeunload', handleBeforeUnload);
+//     // Cleanup listener
+//     return () => {
+//       window.removeEventListener('beforeunload', handleBeforeUnload);
+//     };
+//   }, []);
+//   useLayoutEffect(() => {
+//     if (showLoader) {
+//       const context = gsap.context(() => {
+//         const tl = gsap.timeline({
+//           onComplete: () => {
+//             setLoaderFinished(true);
+//           },
+//         });
+//         setTimeline(tl);
+//       });
+//       return () => context.revert();
+//     }
+//   }, [showLoader]);
+//   return (
+//     <>
+//       {showLoader && !loaderFinished ? (
+//         <Loader timeline={timeline} />
+//       ) : (
+//         <main>
+//           <NavBar />
+//           <main className="flex flex-col h-fit">
+//             <HomeHero />
+//             <HomeAboutUs />
+//             <HomeEducationCrisis />
+//             <HomeWhatWeDo/>
+//             <ContributeWithUs/>
+//           </main>
+//           <Footer/>
+//         </main>
+//       )}
+//     </>
+//   );
+// }

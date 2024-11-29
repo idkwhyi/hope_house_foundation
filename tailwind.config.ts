@@ -14,6 +14,8 @@ const config: Config = {
         'main-bg': 'rgb(250, 250, 250)',
         'custom-red': '#FF6B6B',
         'text-gray': '#969899',
+        'bg-green': '#E1EAE6',
+        'green-highContras': '#a3cfba',
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {

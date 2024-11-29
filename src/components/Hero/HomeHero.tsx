@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useEffect, useRef } from "react";
 import { ButtonCta } from "../button/ButtonCta";
 import { gsap } from "gsap";

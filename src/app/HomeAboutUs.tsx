@@ -1,3 +1,5 @@
+'use client' 
+
 import React from "react";
 import { ButtonCta } from "@/components/button/ButtonCta";
 import Image from "next/image";

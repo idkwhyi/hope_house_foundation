@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useState } from "react";
 import FooterList from "./FooterList";
 import FooterListTitle from "./FooterListTitle";

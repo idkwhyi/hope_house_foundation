@@ -1,3 +1,4 @@
+'use client'
 // Loader.tsx
 import React, { useEffect, useRef } from "react";
 import { words } from "./data";

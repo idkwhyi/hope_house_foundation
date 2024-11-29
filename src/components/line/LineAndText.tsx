@@ -81,7 +81,7 @@ const LineAndText: FC<LineAndTextInterface> = ({ text }: LineAndTextInterface) =
         ref={textRef}
         className="jakarta-bold tracking-wider text-[1.6rem] opacity-0"
       >
-        {text}
+        {text.toUpperCase()}
       </h2>
     </div>
   );
