@@ -15,6 +15,9 @@ type NormalButtonType = {
   openInNewTab?: boolean;
   transitionDuration?: string;
   onClick?: () => void;
+  border?: boolean;
+  borderColor?: string;
+  borderWidth?: string;
 };
 
 /**
@@ -32,6 +35,7 @@ type NormalButtonType = {
  * @param {Function} onClick - Function to handle onclick events
  */
 
+
 export const NormalButton: FC<NormalButtonType> = ({
   color = "black",
   background = "white",
@@ -44,6 +48,9 @@ export const NormalButton: FC<NormalButtonType> = ({
   openInNewTab = false,
   transitionDuration = "0.1s",
   onClick,
+  border = false,
+  borderColor = "black",
+  borderWidth = "1"
 }) => {
   const [isHovered, setIsHovered] = useState(false);
 
@@ -60,20 +67,34 @@ export const NormalButton: FC<NormalButtonType> = ({
     }
   };
 
+  // Construct styles more explicitly
+  const buttonStyle = {
+    backgroundColor: isHovered ? hoverBackground : background,
+    color: isHovered ? hoverColor : color,
+    fontSize: `${font_size}rem`,
+    padding: `${padding}rem`,
+    transition: `all ${transitionDuration} ease-in-out`,
+    cursor: "pointer",
+    ...(border ? {
+      border: `${borderWidth}px solid ${borderColor}`,
+      borderColor: borderColor,
+    } : {
+      border: 'none',
+    }),
+    ':hover': {
+      ...(border ? {
+        borderColor: hoverBackground,
+      } : {}),
+    }
+  };
+
   return (
     <Button
       onClick={handleClick}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      style={{
-        backgroundColor: isHovered ? hoverBackground : background,
-        color: isHovered ? hoverColor : color,
-        fontSize: `${font_size}rem`,
-        padding: `${padding}rem`,
-        transition: `all ${transitionDuration} ease-in-out`,
-        cursor: "pointer",
-      }}
-      className="jakarta-regular relative overflow-hidden"
+      style={buttonStyle}
+      className="jakarta-regular relative overflow-hidden w-fit"
     >
       <span
         style={{

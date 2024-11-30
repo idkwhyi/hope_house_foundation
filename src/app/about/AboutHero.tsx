@@ -21,7 +21,7 @@ const AboutHero = () => {
       <div className="absolute z-0 bottom-0 left-0 w-full h-1/2 bg-bg-green"></div>
       {/* first hero content */}
       <div className="w-full z-10 flex flex-col lg:flex-row items-center justify-between gap-[6.4rem] pt-[3.2rem] lg:py-[3.2rem]">
-        <div className="w-full lg:w-[50vw]">
+        <div className="w-full lg:w-[50vw] flex flex-col gap-4 lg:gap-12">
           <LineAndText text="know about us" />
           <h1 className="merri-bold text-[4.8rem]">
             Our Dedication to Those in Need

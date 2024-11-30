@@ -29,7 +29,7 @@ export function ButtonBorderNoBg({
       <Button
         variant="ghost"
         style={{ fontSize: `${font_size}rem`, borderColor: `${color}` }}
-        className={`w-full h-fit rounded-md px-8 py-6 flex items-center jakarta-regular justify-between border text-left hover:bg-white text-${color}`}
+        className={`w-full h-fit rounded-md px-8 py-6 flex items-center jakarta-regular justify-between border text-left hover:bg-[#e0e0e0] text-${color}`}
       >
         <span>{text}</span>
       </Button>
