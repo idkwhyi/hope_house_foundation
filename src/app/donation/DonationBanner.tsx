@@ -15,7 +15,7 @@ const DonationBanner = () => {
         <div className="absolute inset-0 bg-black bg-opacity-50 z-20 rounded-[2rem]"></div>
 
         <div className="relative z-30 w-full h-fit flex flex-col items-center justify-center gap-12">
-          <h1 className="text-white z-40 text-[4.8rem] merri-bold text-center">
+        <h1 className="text-white z-40 text-[2.8rem] lg:text-[4.8rem] merri-bold text-center">
             You can contribute to provide a place for children with special
             needs!
           </h1>
