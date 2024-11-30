@@ -5,6 +5,7 @@ import React from "react";
 const DonationAbout = () => {
   return (
     <section className="w-full flex flex-col p-[3.2rem] lg:p-[6.4rem] gap-[3.2rem] lg:gap-[6.4rem]">
+      <hr/>
       <LineAndText text="about donation" />
       <div className="w-full flex flex-col gap-12">
         <h1 className="merri-bold text-[4.8rem]">How to Donate.</h1>
@@ -17,6 +18,7 @@ const DonationAbout = () => {
           team will assist you directly with the donation process.
         </p>
       </div>
+      <hr/>
     </section>
   );
 };
