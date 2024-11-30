@@ -17,7 +17,7 @@ const DonationHero = () => {
         </p>
         <NormalButton
           background="white"
-          text="Contact Us"
+          text="More Info"
           url=""
           border={true}
           borderColor="black"
