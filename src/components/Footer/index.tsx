@@ -36,8 +36,8 @@ const Footer = () => {
         <ul className={listContainerStyle}>
           <FooterList text="Home" url="/" />
           <FooterList text="About Us" url="about" />
-          <FooterList text="Contact" url="" />
-          <FooterList text="Donation" url="" />
+          <FooterList text="Contact" url="/contact" />
+          <FooterList text="Donation" url="/donation" />
         </ul>
       </div>
 
@@ -86,7 +86,7 @@ const Footer = () => {
             />
           </div>
         </div>
-        <p>&copy; 2024 Indonesia Hope House Foundation.</p>
+        <p className="w-full lg:w-fit text-center">&copy; 2024 Indonesia Hope House Foundation.</p>
       </div>
     </footer>
   );
