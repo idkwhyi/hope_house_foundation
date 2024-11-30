@@ -3,6 +3,7 @@ import NavBar from '@/components/navbar/NavBar'
 import Footer from '@/components/Footer'
 import DonationHero from './DonationHero'
 import DonationContribute from './DonationContribute'
+import DonationAbout from './DonationAbout'
 
 const page = () => {
   return (
@@ -13,6 +14,7 @@ const page = () => {
         {/* main content */}
         <DonationHero/>
         <DonationContribute/>
+        <DonationAbout/>
       </main>
       {/* footer tag is incuded inside footer */}
       <Footer />
