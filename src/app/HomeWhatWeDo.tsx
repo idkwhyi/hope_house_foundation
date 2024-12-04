@@ -25,7 +25,7 @@ const HomeWhatWeDo = () => {
           body="We currently have 12 schools spread across Indonesia. We encourage good education  as well as low tuition fees due to their financial disability."
           imageUrl="/images/swing.jpeg"
           readMoreLink=""
-          donationLink=""
+          donationLink="donation"
           buttonColor="white"
         />
         <Action 
@@ -33,7 +33,7 @@ const HomeWhatWeDo = () => {
           body="Provided math and English tutors, this activity is open to all social groups and religious backgrounds."
           imageUrl="https://images.unsplash.com/photo-1489451058181-433dc9ffa757?q=80&w=2944&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           readMoreLink=""
-          donationLink=""
+          donationLink="donation"
           buttonColor="white"
         />
         <Action 
@@ -41,7 +41,7 @@ const HomeWhatWeDo = () => {
           body="We started character building school with the aim of shaping children's behavior. We realize that character is one of the important aspects of life, both in religious and social life."
           imageUrl="https://images.unsplash.com/photo-1510590337019-5ef8d3d32116?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           readMoreLink=""
-          donationLink=""
+          donationLink="donation"
           buttonColor="white"
         />
         <Action 
@@ -49,7 +49,7 @@ const HomeWhatWeDo = () => {
           body="Our foundation also provides attention to homeless children, children whose families have been broken up, and also disadvantaged adults."
           imageUrl="https://images.unsplash.com/photo-1479244209311-71e35c910f59?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           readMoreLink=""
-          donationLink=""
+          donationLink="donation"
           buttonColor="white"
         />
         

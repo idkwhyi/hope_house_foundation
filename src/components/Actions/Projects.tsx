@@ -34,7 +34,7 @@ const Projects: FC<ProjectsType> = ({
         reversed ? "lg:flex-row-reverse" : "lg:flex-row"
       } py-[3.2rem] lg:py-[3.2rem]`}
     >
-      <div className="relative w-full h-[40rem] block ">
+      <div className="relative w-full h-[30rem] lg:h-[40rem] block ">
         <Image
           src={imageUrl}
           alt="logo"
@@ -45,11 +45,11 @@ const Projects: FC<ProjectsType> = ({
       </div>
 
       <div className="w-full h-fit flex flex-col items-start justify-start gap-[3.2rem]">
-        <h3 className="merri-bold text-[4rem]">{title}</h3>
+        <h3 className="merri-bold text-[3rem] lg:text-[4rem]">{title}</h3>
         <p className="jakarta-regular text-[1.6rem]">{description}</p>
-        <div className="w-full flex gap-12">
+        <div className="w-full flex justify-between lg:justify-start lg:gap-12">
           <ButtonBorderNoBg link={detailsLink} text="Read Details" />
-          <ButtonWithArrow link="/donate" text="Donate Now" />
+          <ButtonWithArrow link="donation" text="Donate Now" />
         </div>
       </div>
     </article>

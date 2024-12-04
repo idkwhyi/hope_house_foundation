@@ -51,8 +51,8 @@ const HomeEducationCrisis = () => {
 
           <div className="w-full flex items-center gap-[2.4rem]">
             {/* BUTTON CONTAINER */}
-            <ButtonBorderNoBg link="#" text="Read Articles"/>
-            <ButtonWithArrow link="#" text="Donate Now"/>
+            <ButtonBorderNoBg link="https://www.unicef.org/indonesia/education-and-adolescents" text="Read Articles"/>
+            <ButtonWithArrow link="/donation" text="Donate Now"/>
           </div>
         </div>
       </div>
@@ -79,8 +79,8 @@ const HomeEducationCrisis = () => {
 
           <div className="w-full flex items-center gap-[2.4rem]">
             {/* BUTTON CONTAINER */}
-            <ButtonBorderNoBg link="#" text="Read Articles" color="black" />
-            <ButtonWithArrow link="#" text="Donate Now" />
+            <ButtonBorderNoBg link="https://kumparan.com/setyo-purwoto/putus-sekolah-dampak-dari-buruknya-ekonomi-indonesia-22QYrofaPF0/3" text="Read Articles" color="black" />
+            <ButtonWithArrow link="/donation" text="Donate Now" />
           </div>
         </div>
         {/* image container */}

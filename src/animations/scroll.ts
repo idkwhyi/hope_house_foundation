@@ -97,7 +97,7 @@ const smoothReveal = async () => {
       // Set initial state
       gsap.set(element, {
         color: "rgb(54, 54, 54)",
-        opacity: 0.4,
+        opacity: 0.2, // * Changeable
 
       });
 

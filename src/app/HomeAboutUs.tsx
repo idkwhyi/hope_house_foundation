@@ -33,7 +33,7 @@ const HomeAboutUs = () => {
           </div>
           <ButtonCta
             text="Read More"
-            link="#"
+            link="about"
             background_color={button_bg}
             background_color_hover={button_bg_hover}
             padding_x="2.4rem"
