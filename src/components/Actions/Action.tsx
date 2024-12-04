@@ -50,7 +50,7 @@ const Action: FC<ActionProps> = ({
         </div>
 
         {/* Buttons Container */}
-        <div className="w-full flex items-center pt-[1.6rem] gap-[2.4rem]">
+        <div className="w-full flex items-center pt-[1.6rem] gap-[2rem] lg:gap-[2.4rem]">
           <NormalButton text="Read More" url={readMoreLink} />
           <ButtonWithArrow link={donationLink} text="Donate Now" color={buttonColor}/>
         </div>
