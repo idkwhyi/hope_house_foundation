@@ -103,7 +103,7 @@ export const projectContents: Record<string, Project> = {
 
   },
   'shelter-home': {
-    id: 'project-hs',
+    id: 'project-sh',
     title: "HBB Shelter Home",
     summary: "Our foundation also provides attention to homeless children, children whose families have been broken up, and also disadvantaged adults.",
     aboutDescription: "Our foundation also provides attention to homeless children, children whose families have been broken up, and also disadvantaged adults.",
