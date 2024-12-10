@@ -19,7 +19,7 @@ const page = () => {
   const lastSegment = segments[segments.length - 1];
 
   return (
-    <div>
+    <div className="bg-main-bg">
       <NavBar />
 
       <main className="my-[10rem] px-[3.2rem] lg:px-[19vw] w-full flex flex-col bg-main-bg">
