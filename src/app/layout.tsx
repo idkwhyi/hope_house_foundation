@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "../styles/globals.css";
 import GrammarlyHandler from "@/components/GrammarlyHandler";
+import Head from "next/head";
 
 export const metadata: Metadata = {
   title: {
@@ -61,12 +62,13 @@ interface RootLayoutProps {
 export default function RootLayout({ children }: Readonly<RootLayoutProps>) {
   return (
     <html lang="en">
-      <head>
+      <Head>
         <meta
           name="google-site-verification"
           content="vxD3Xb--Dc969LW1uc_tRE-9xEd8p00s08VFTJmAUoY"
         />
-      </head>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <body className="antialiased">
         <GrammarlyHandler className="antialiased" />
         {children}
