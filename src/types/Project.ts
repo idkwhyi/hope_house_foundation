@@ -5,6 +5,6 @@ export interface Project {
   aboutDescription: string;
   aboutImage: string;
   content: string;
-  hookImage?: string;
+  hookImage: string;
   contentImages?: string[]; // New field for content images
 }

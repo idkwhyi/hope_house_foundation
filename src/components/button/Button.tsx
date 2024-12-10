@@ -33,6 +33,9 @@ type NormalButtonType = {
  * @param {boolean} openInNewTab - Open url in new tab | default false
  * @param {string} transitionDuration - Duration of hover | default 0.1s
  * @param {Function} onClick - Function to handle onclick events
+ * @param {boolean} border - Toggle border | default false
+ * @param {string} borderColor - Border color | default black
+ * @param {string} borderWidth - Border thickness | default 1
  */
 
 

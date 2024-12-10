@@ -13,10 +13,6 @@ export const projectContents: Record<string, Project> = {
       
       Indonesia Hope House Foundation (YRPI) was founded with a very noble mission to provide affordable quality education for underprivileged children, and to guide them to know Christian values. Through the Harapan Bagi Bangsa (HBB) or Hope For The Nation education program, YRPI not only provides formal education but also strives to build the character and spirituality of every student it educates. With the belief that every child has the potential to become a hope for the nation, YRPI works hard to provide a safe and supportive learning environment.
 
-  <br/>
-      IMAGE HERE
-  <br/>
-
       ## Sekolah HBB: Affordable Quality Education
       The Harapan Bagi Bangsa Program has established four schools in Jakarta and eight schools in North Sumatra. Through these schools, YRPI provides education at a very low cost, often helping students who are truly unable to continue their education without being charged. With a high commitment, HBB schools adhere to government education standards, so that students have an equal opportunity to achieve quality education. Here, students are not only taught general knowledge, but also moral values ​​and faith, so that in the future they can become individuals who bring hope to the nation.
 
@@ -33,10 +29,7 @@ export const projectContents: Record<string, Project> = {
 
       Be a part of this mission – together we can provide hope and a better future for those in need.
     `,
-    // hookImage: "/images/swing.jpeg",
-    // contentImages: [
-    //   "https://images.unsplash.com/photo-1533854775446-95c4609da544?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    // ],
+    hookImage: "/images/swing.jpeg",
   },
   'little-house': {
     id: 'project-lh',
@@ -65,6 +58,7 @@ export const projectContents: Record<string, Project> = {
       Join us in this journey of learning and inclusion—because everyone deserves the opportunity to unlock their full potential.
 
     `,
+    hookImage: "/images/children_sit.avif"
     // hookImage: "https://images.unsplash.com/photo-1542810634-71277d95dcbb?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     // contentImages: [
     //   "",
@@ -96,6 +90,7 @@ export const projectContents: Record<string, Project> = {
 
       We invite you to join us in this mission. Whether through support, prayer, or volunteerism, your involvement can help us ensure that the next generation is equipped with the character and values needed to make a positive, lasting impact on the world. Together, we can build a future where character and integrity stand as the foundation of every child’s life.
     `,
+    hookImage: "/images/read_bible.avif"
     // hookImage: "https://images.unsplash.com/photo-1504052434569-70ad5836ab65?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     // contentImages: [
     //   "",
@@ -131,7 +126,7 @@ export const projectContents: Record<string, Project> = {
 
       By offering shelter, love, and practical support, we’re creating a future where every individual, no matter their age or background, has the chance to rebuild and thrive. Join us in making a difference, and together, we can create a brighter future for homeless children and adults in our community.
     `,
-    // hookImage: "/images/shelter.png",
+    hookImage: "/images/shelter.png",
     // contentImages: [
     //   ""
     // ]
