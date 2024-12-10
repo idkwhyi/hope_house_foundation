@@ -67,7 +67,7 @@ export default function RootLayout({ children }: Readonly<RootLayoutProps>) {
           name="google-site-verification"
           content="vxD3Xb--Dc969LW1uc_tRE-9xEd8p00s08VFTJmAUoY"
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/images/logo.jpeg" />
       </Head>
       <body className="antialiased">
         <GrammarlyHandler className="antialiased" />
