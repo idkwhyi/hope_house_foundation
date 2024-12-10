@@ -3,7 +3,7 @@ import "../styles/globals.css";
 import GrammarlyHandler from "@/components/GrammarlyHandler";
 
 export const metadata: Metadata = {
-  title: "Dev_Hope House Foundation",
+  title: "Indonesia Hope House Foundation",
   description: "Testing of Hope House Foundation",
 };
 

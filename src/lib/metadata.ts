@@ -10,12 +10,15 @@ export const baseMetadata: Metadata = {
   keywords: [
     'Indonesia Hope House Foundation',
     'Hope House Foundation',
+    'Harapan Bagi Bangsa',
+    'harapan bagi bangsa',
     'orphans',
     'underprivileged children',
     'nonprofit organization',
     'child welfare',
     'education programs',
     'community support',
+    'children',
     'anak yatim piatu',
     'anak yatim',
     'anak piatu',
@@ -27,18 +30,18 @@ export const baseMetadata: Metadata = {
     'donasi anak Indonesia',
     'yayasan anak yatim piatu',
     'program bantuan pendidikan Indonesia',
-    'bantu anak Indonesia'
+    'anak anak'
   ],
-  authors: [{ name: 'Your Company Name' }],
-  creator: 'Your Company Name',
-  publisher: 'Your Company Name',
+  authors: [{ name: 'Indonesia Hope House Foundation' }],
+  creator: 'Indonesia Hope House Foundation',
+  publisher: 'Indonesia Hope House Foundation',
   openGraph: {
     type: 'website',
     locale: 'en_US',
     url: 'https://www.yourcompany.com',
-    siteName: 'Your Company Name',
-    title: 'Your Company Name - Professional Services',
-    description: 'Comprehensive description of your company, services, and unique value proposition',
+    siteName: 'Hope House Foundation',
+    title: 'Indonesia Hope House Foundation',
+    description: 'Hope house foundation based on indonesia',
     images: [
       {
         url: '/og-image.jpg',
@@ -47,12 +50,6 @@ export const baseMetadata: Metadata = {
         alt: 'Your Company Name Open Graph Image'
       }
     ]
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Your Company Name - Professional Services',
-    description: 'Comprehensive description of your company, services, and unique value proposition',
-    images: ['/twitter-image.jpg']
   },
   robots: {
     index: true,
