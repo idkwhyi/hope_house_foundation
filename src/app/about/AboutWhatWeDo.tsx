@@ -27,7 +27,7 @@ const AboutWhatWeDo = () => {
     <section className="w-full h-fit flex flex-col p-[3.2rem] lg:p-[6.4rem] gap-[3.2rem]">
       <LineAndText text="our projects" />
 
-      <h2 className="merri-bold text-[4.8rem]">
+      <h2 className="merri-bold text-[3.2rem] lg:text-[4.8rem]">
         Our steps to changing the lives of children in need.
       </h2>
       {projects.map((project, index) => (

@@ -28,7 +28,7 @@ const HomeEducationCrisis = () => {
 
         {/* content 1 container */}
         <div className=" w-full flex flex-col items-center justify-between text-[1.8rem] gap-[3.2rem]">
-          <h3 data-smooth-reveal className="merri-bold text-[4rem] lg:text-[4.8rem]">
+          <h3 data-smooth-reveal className="merri-bold text-[3.2rem] lg:text-[4.8rem]">
             Over 4 Million Children not in School.
           </h3>
 
@@ -62,7 +62,7 @@ const HomeEducationCrisis = () => {
 
         {/* content 2 container */}
         <div className="w-full flex flex-col items-center justify-between text-[1.8rem] gap-[3.2rem]">
-          <h3 data-smooth-reveal className="merri-bold text-[4rem] lg:text-[4.8rem] w-full">
+          <h3 data-smooth-reveal className="merri-bold text-[3.2rem] lg:text-[4.8rem] w-full">
           Education Inequality Crisis.
           </h3>
 

@@ -8,7 +8,7 @@ const ContactHero = () => {
       <div className="w-full lg:w-1/2 flex flex-col gap-[3.2rem]">
         <LineAndText text="contact us" />
         <div className="w-full flex flex-col gap-[1.6rem]">
-          <h1 className="merri-bold text-[4.8rem]">
+          <h1 className="merri-bold text-[3.2rem] lg:text-[4.8rem]">
             We&apos;d love to hear from you.
           </h1>
           <p className="jakarta-regular text-[1.6rem]">
