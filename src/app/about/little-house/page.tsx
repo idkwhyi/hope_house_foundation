@@ -7,6 +7,37 @@ import NavBar from "@/components/navbar/NavBar";
 import React from "react";
 import { projectContents } from "@/data/projectContents";
 import { usePathname } from "next/navigation";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Little House",
+  description:
+    "Welcome to Little House, a hub of inclusive learning initiatives under Harapan Bagi Bangsa (HBB) Christian Schools, part of the Indonesia Hope House Foundation. Our Math and English tutoring programs are designed to break down barriers to education, providing personalized support to individuals from all backgrounds. Whether you’re a student, adult learner, or volunteer, Little House fosters a community of mutual respect, understanding, and collaboration. Join us as we strive to make quality education accessible to everyone, fostering a brighter, value-driven future for all.",
+  icons: "/images/logo.jpeg",
+  keywords: [
+    "Little House",
+    "Harapan Bagi Bangsa Little House",
+    "YRPI Little House",
+    "Hope House Foundation Little House",
+  ],
+  authors: [{ name: "Indonesia Hope House Foundation" }],
+  creator: "Indonesia Hope House Foundation",
+  publisher: "Indonesia Hope House Foundation",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  verification: {
+    google: "vxD3Xb--Dc969LW1uc_tRE-9xEd8p00s08VFTJmAUoY",
+  },
+};
 
 const page = () => {
   const projectKeys = Object.keys(projectContents); // Extract project keys for iteration
@@ -26,46 +57,69 @@ const page = () => {
         <LineAndText text="little house" />
         <article className="lg:px-[6vw] w-full h-fit roboto-regular text-[1.8rem] lg:text-[2rem] flex flex-col gap-[3.2rem] lg:gap-[4.2rem] mt-[3.2rem] lg:mt-[4.2rem] text-balance">
           <h1 className="text-[3.2rem] lg:text-[4.2rem] jakarta-bold">
-          Little House
+            Little House
           </h1>
           <hr />
-          <p><b>Unlocking Potential: Inclusive Math and English Tutoring for All</b></p>
           <p>
-          Education is a cornerstone for building brighter futures, and access to quality learning resources can make a world of difference. That’s why our Math and English tutoring program is designed to be inclusive, welcoming individuals from all social groups and religious backgrounds. 
+            <b>
+              Unlocking Potential: Inclusive Math and English Tutoring for All
+            </b>
+          </p>
+          <p>
+            Education is a cornerstone for building brighter futures, and access
+            to quality learning resources can make a world of difference. That’s
+            why our Math and English tutoring program is designed to be
+            inclusive, welcoming individuals from all social groups and
+            religious backgrounds.
           </p>
 
           <h2 className="text-[2.4rem] jakarta-bold">
-          Breaking Barriers to Learning 
+            Breaking Barriers to Learning
           </h2>
           <p>
-          In many communities, access to academic support is often limited by social or economic factors. Our initiative aims to break these barriers by providing expert tutors who make learning accessible to everyone. Whether you&apos;re a student needing extra help or an adult looking to enhance your skills, this program is open to all, fostering a culture of inclusion and equal opportunity.  
+            In many communities, access to academic support is often limited by
+            social or economic factors. Our initiative aims to break these
+            barriers by providing expert tutors who make learning accessible to
+            everyone. Whether you&apos;re a student needing extra help or an
+            adult looking to enhance your skills, this program is open to all,
+            fostering a culture of inclusion and equal opportunity.
           </p>
 
           <BlogImage alt="Image" imageUrl={"/images/writing_on_paper.jpg"} />
 
           <h2 className="text-[2.4rem] jakarta-bold">
-          Personalized Support for Every Learner
+            Personalized Support for Every Learner
           </h2>
           <p>
-          Our tutors are dedicated to tailoring lessons to meet individual needs, ensuring that every participant receives the guidance they need to succeed. From mastering mathematical concepts to improving English language proficiency, we create a supportive environment where everyone can grow and thrive.  
+            Our tutors are dedicated to tailoring lessons to meet individual
+            needs, ensuring that every participant receives the guidance they
+            need to succeed. From mastering mathematical concepts to improving
+            English language proficiency, we create a supportive environment
+            where everyone can grow and thrive.
           </p>
 
           <h2 className="text-[2.4rem] jakarta-bold">
-          A Bridge Between Communities  
+            A Bridge Between Communities
           </h2>
           <p>
-          Education not only empowers individuals but also unites communities. By welcoming people of all religious and social backgrounds, our program promotes mutual respect, understanding, and collaboration. It’s a space where diversity is celebrated, and learning is a shared journey.  
+            Education not only empowers individuals but also unites communities.
+            By welcoming people of all religious and social backgrounds, our
+            program promotes mutual respect, understanding, and collaboration.
+            It’s a space where diversity is celebrated, and learning is a shared
+            journey.
           </p>
 
-          <h2 className="text-[2.4rem] jakarta-bold">
-          Get Involved 
-          </h2>
+          <h2 className="text-[2.4rem] jakarta-bold">Get Involved</h2>
           <p>
-          Whether you’re a learner eager to join or someone passionate about supporting this cause, there’s a place for you here. Together, we can create a future where quality education is accessible to all, regardless of their background.  
+            Whether you’re a learner eager to join or someone passionate about
+            supporting this cause, there’s a place for you here. Together, we
+            can create a future where quality education is accessible to all,
+            regardless of their background.
           </p>
 
           <p>
-          Join us in this journey of learning and inclusion—because everyone deserves the opportunity to unlock their full potential.
+            Join us in this journey of learning and inclusion—because everyone
+            deserves the opportunity to unlock their full potential.
           </p>
         </article>
       </main>

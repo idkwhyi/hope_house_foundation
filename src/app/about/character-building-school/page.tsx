@@ -7,6 +7,39 @@ import NavBar from "@/components/navbar/NavBar";
 import React from "react";
 import { projectContents } from "@/data/projectContents";
 import { usePathname } from "next/navigation";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Character Building School",
+  description:
+    "Explore the Character Building School by the Indonesia Hope House Foundation. Learn about our mission to cultivate integrity, responsibility, and kindness in children. Join us in shaping a brighter, value-driven future through education and moral excellence.",
+  icons: "/images/logo.jpeg",
+  keywords: [
+    "Character Building School",
+    "YRPI Character Building School",
+    "Hope House Foundation Character Building School",
+    "Sekolah Pembentukan Karakter",
+    "Sekolah Pembentukan Karakter YRPI",
+    "Sekolah Pembentukan Karakter Yayasan Hope House",
+  ],
+  authors: [{ name: "Indonesia Hope House Foundation" }],
+  creator: "Indonesia Hope House Foundation",
+  publisher: "Indonesia Hope House Foundation",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  verification: {
+    google: "vxD3Xb--Dc969LW1uc_tRE-9xEd8p00s08VFTJmAUoY",
+  },
+};
 
 const page = () => {
   const projectKeys = Object.keys(projectContents); // Extract project keys for iteration
@@ -49,35 +82,57 @@ const page = () => {
             The Motivation Behind CBS
           </h2>
           <p>
-          This pressing need for stronger character and moral excellence is the very reason we founded CBS (Character Building Schools). We believe that nurturing virtuous personalities in children is not just important; it is a must. In a world where character seems to be undermined, we must accelerate our efforts to raise children who exemplify integrity, responsibility, and kindness.  
+            This pressing need for stronger character and moral excellence is
+            the very reason we founded CBS (Character Building Schools). We
+            believe that nurturing virtuous personalities in children is not
+            just important; it is a must. In a world where character seems to be
+            undermined, we must accelerate our efforts to raise children who
+            exemplify integrity, responsibility, and kindness.
           </p>
 
-
           <h2 className="text-[2.4rem] jakarta-bold">
-          Cultivating Integrity and Excellence 
+            Cultivating Integrity and Excellence
           </h2>
           <p>
-          At CBS, we are committed to providing an environment where children can thrive academically and morally. It’s not enough to just educate children in the traditional sense; we aim to build their character and ensure they develop into individuals with strong, virtuous personalities. Our vision is for them to become excellent individuals who will make a positive impact on the world around them, guided by Christian values and integrity.  
+            At CBS, we are committed to providing an environment where children
+            can thrive academically and morally. It’s not enough to just educate
+            children in the traditional sense; we aim to build their character
+            and ensure they develop into individuals with strong, virtuous
+            personalities. Our vision is for them to become excellent
+            individuals who will make a positive impact on the world around
+            them, guided by Christian values and integrity.
           </p>
 
           <BlogImage alt="Image" imageUrl={"/images/books.jpg"} />
 
-          <h2 className="text-[2.4rem] jakarta-bold">
-          Expanding Our Reach  
-          </h2>
+          <h2 className="text-[2.4rem] jakarta-bold">Expanding Our Reach</h2>
           <p>
-          Currently, we operate two CBS schools, each serving 80-150 children. We are proud to offer our program to a wide range of students—not just those from our Harapan Bagi Bangsa (HBB) schools, but also children from all backgrounds. Our doors are open to every child, regardless of their background, because we believe in the power of inclusive education to shape a brighter, more compassionate future.  
+            Currently, we operate two CBS schools, each serving 80-150 children.
+            We are proud to offer our program to a wide range of students—not
+            just those from our Harapan Bagi Bangsa (HBB) schools, but also
+            children from all backgrounds. Our doors are open to every child,
+            regardless of their background, because we believe in the power of
+            inclusive education to shape a brighter, more compassionate future.
           </p>
 
           <h2 className="text-[2.4rem] jakarta-bold">
-          The Road Ahead: A Call to Action
+            The Road Ahead: A Call to Action
           </h2>
           <p>
-          While we are encouraged by the progress we’ve made so far, there’s still much work to be done. Our mission is clear: we need to raise children who embody the values of excellence, integrity, and virtue. To do this, we must continue to expand, reach more children, and accelerate the pace of character building in our schools.  
+            While we are encouraged by the progress we’ve made so far, there’s
+            still much work to be done. Our mission is clear: we need to raise
+            children who embody the values of excellence, integrity, and virtue.
+            To do this, we must continue to expand, reach more children, and
+            accelerate the pace of character building in our schools.
           </p>
 
           <p>
-          We invite you to join us in this mission. Whether through support, prayer, or volunteerism, your involvement can help us ensure that the next generation is equipped with the character and values needed to make a positive, lasting impact on the world. Together, we can build a future where character and integrity stand as the foundation of every child’s life.
+            We invite you to join us in this mission. Whether through support,
+            prayer, or volunteerism, your involvement can help us ensure that
+            the next generation is equipped with the character and values needed
+            to make a positive, lasting impact on the world. Together, we can
+            build a future where character and integrity stand as the foundation
+            of every child’s life.
           </p>
         </article>
       </main>
