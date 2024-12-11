@@ -1,4 +1,3 @@
-"use client";
 import BlogImage from "@/components/blog/BlogImage";
 import ProjectCard from "@/components/card/ProjectCard";
 import Footer from "@/components/Footer";
@@ -15,6 +14,7 @@ export function generateMetadata(): Metadata {
 }
 
 const page = () => {
+  'use client'
   const projectKeys = Object.keys(projectContents); // Extract project keys for iteration
 
   // eslint-disable-next-line react-hooks/rules-of-hooks
