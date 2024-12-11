@@ -1,3 +1,4 @@
+'use client'
 import BlogImage from "@/components/blog/BlogImage";
 import ProjectCard from "@/components/card/ProjectCard";
 import Footer from "@/components/Footer";
