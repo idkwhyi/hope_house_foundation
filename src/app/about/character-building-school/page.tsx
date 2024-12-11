@@ -7,12 +7,6 @@ import NavBar from "@/components/navbar/NavBar";
 import React from "react";
 import { projectContents } from "@/data/projectContents";
 import { usePathname } from "next/navigation";
-import { Metadata } from "next";
-import { pageMetadata } from "@/lib/metadata";
-
-export function generateMetadata(): Metadata {
-  return pageMetadata('/about/character-building-school');
-}
 
 const page = () => {
   'use client'
