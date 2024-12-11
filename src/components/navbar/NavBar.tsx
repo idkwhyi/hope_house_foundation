@@ -63,7 +63,7 @@ const NavBar = () => {
           ))}
         </ul>
         <ButtonCta
-          link="#"
+          link="/donate"
           text="Donate"
           background_color={button_bg}
           background_color_hover={button_bg_hover}
