@@ -57,12 +57,12 @@ const AboutHero = () => {
         {visionAndMission.map((item) => (
           <div
             key={item.title}
-            className="w-full h-full lg:h-[32rem] flex flex-col gap-[2rem] border bg-green-highContras border-black rounded-lg p-12"
+            className="w-full h-full lg:h-[32rem] flex flex-col gap-[2rem] border bg-[#bee6ce] border-black rounded-lg p-12 items-center"
           >
-            <h2 className="jakarta-bold text-[1.8rem]">
+            <h2 className="jakarta-bold text-[2.4rem] underline">
               {item.title.toUpperCase()}
             </h2>
-            <div className="jakarta-regular text-[1.6rem]">{item.body}</div>
+            <div className="text-center jakarta-regular text-[1.6rem]">{item.body}</div>
           </div>
         ))}
       </div>
