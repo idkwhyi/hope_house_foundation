@@ -36,9 +36,9 @@ const AboutHero = () => {
             Indonesian Hope House Foundation was established with the aim of
             providing support for vulnerable children and individuals, so that
             they can live in a safe and supportive environment. We provide
-            education, housing, and oasic necessities to nelo them arow and
-            develoo. Witn aporooriatel curriculum, englis lanquage education,
-            and character buildina, we prepare them for a bettertuture
+            education, housing, and basic necessities to help them grow and
+            thrive. With appropriate curriculum, english language education,
+            and character building, we prepare them for a brighter future.
           </p>
         </div>
       </div>
