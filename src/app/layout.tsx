@@ -20,6 +20,7 @@ export default function RootLayout({ children }: Readonly<RootLayoutProps>) {
           content="vxD3Xb--Dc969LW1uc_tRE-9xEd8p00s08VFTJmAUoY"
         />
         <link rel="icon" href="/images/logo.jpeg" />
+        <title>Indonesia Hope House Foundation</title>
       </Head>
       <body className="antialiased">
         <GrammarlyHandler className="antialiased" />
