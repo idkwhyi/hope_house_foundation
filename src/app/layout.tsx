@@ -11,16 +11,19 @@ interface RootLayoutProps {
 }
 
 export default function RootLayout({ children }: Readonly<RootLayoutProps>) {
-
   return (
     <html lang="en">
       <Head>
+        <title>Indonesia Hope House Foundation - YRPI</title>
         <meta
           name="google-site-verification"
           content="vxD3Xb--Dc969LW1uc_tRE-9xEd8p00s08VFTJmAUoY"
         />
+        <meta
+          property="og:title"
+          content="Indonesia Hope House Foundation - YRPI"
+        />
         <link rel="icon" href="/images/logo.jpeg" />
-        <title>Indonesia Hope House Foundation - YRPI</title>
       </Head>
       <body className="antialiased">
         <GrammarlyHandler className="antialiased" />
