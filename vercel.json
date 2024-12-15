@@ -1,0 +1,7 @@
+{
+  "name": "Indonesia Hope House Foundation",
+  "alias": ["hope-house-foundation.vercel.app"],
+  "env": {
+    "NEXT_PUBLIC_SITE_URL": "https://hope-house-foundation.vercel.app"
+  }
+}
