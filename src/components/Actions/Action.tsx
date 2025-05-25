@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React, { forwardRef } from "react";
 import { ButtonWithArrow } from "../button/ButtonWithArrow";
 import { NormalButton } from "../button/Button";
 
@@ -20,17 +20,19 @@ type ActionProps = {
  * @param {string} donationLink - Link to donation page
  * @param {string} buttonColor - Color theme for the button | default black
  */
-
-const Action: FC<ActionProps> = ({
+const Action = forwardRef<HTMLDivElement, ActionProps>(({
   title,
   body,
   imageUrl,
   readMoreLink,
   donationLink,
-  buttonColor='black',
-}) => {
+  buttonColor = 'black',
+}, ref) => {
   return (
-    <article className="relative min-h-[40vh] lg:min-h-[400px] w-full overflow-hidden rounded-[2rem] group">
+    <article 
+      ref={ref}
+      className="relative min-h-[40vh] lg:min-h-[400px] bg-blue-200 w-full overflow-hidden rounded-[2rem] group"
+    >
       {/* Background Image with Overlay */}
       <div
         className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
@@ -54,10 +56,12 @@ const Action: FC<ActionProps> = ({
           <NormalButton text="Read More" url={readMoreLink} />
           <ButtonWithArrow link={donationLink} text="Donate Now" color={buttonColor}/>
         </div>
-
       </div>
     </article>
   );
-};
+});
+
+// Add a display name for better debugging
+Action.displayName = 'Action';
 
 export default Action;

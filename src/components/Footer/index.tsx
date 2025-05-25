@@ -14,7 +14,7 @@ const Footer = () => {
       return;
     }
     const subject = "Email from Hope House Foundation website";
-    const mailToLink = `mailto:company@example.com?subject=${encodeURIComponent(
+    const mailToLink = `mailto:hopeFortheNation@gmail.com?subject=${encodeURIComponent(
       subject
     )}&body=${encodeURIComponent(message)}`;
     window.location.href = mailToLink;
@@ -25,7 +25,7 @@ const Footer = () => {
   const listContainerStyle = "w-fit h-fit flex flex-col gap-[1.4rem]";
 
   return (
-    <footer className="w-full p-[3.2rem] lg:p-[6.4rem] bg-black text-white grid grid-cols-2 lg:flex lg:flex-row items-start justify-between gap-10 lg:gap-0">
+    <footer id="footer" className="w-full p-[3.2rem] lg:p-[6.4rem] bg-black text-white grid grid-cols-2 lg:flex lg:flex-row items-start justify-between gap-10 lg:gap-0">
       <h2 className="col-span-2 jakarta-bold text-[2.4rem] ">
         HOPE HOUSE
         <br />
@@ -40,7 +40,7 @@ const Footer = () => {
           <FooterList text="Donation" url="/donation" />
         </ul>
       </div>
-
+{/* 
       <div className={groupContainerStyle}>
         <FooterListTitle text="CONNECT" />
         <ul className={listContainerStyle}>
@@ -48,12 +48,14 @@ const Footer = () => {
           <FooterList text="Instagram" url="" />
           <FooterList text="Twitter" url="" />
         </ul>
-      </div>
+      </div> */}
 
+    {/* Whatsapp number */}
       <div className={groupContainerStyle}>
         <FooterListTitle text="DONATION METHOD" />
         <ul className={listContainerStyle}>
-          <FooterList text="Whatsapp" url="" />
+          <FooterList text="081398790758" url="https://wa.me/6281398790758" />
+          <FooterList text="081384370533" url="https://wa.me/6281384370533" />
         </ul>
       </div>
 

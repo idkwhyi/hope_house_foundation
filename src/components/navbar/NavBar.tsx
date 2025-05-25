@@ -21,6 +21,8 @@ const NavBar = () => {
     { href: "/about", label: "About us" },
     { href: "/contact", label: "Contact" },
     { href: "/donation", label: "Donation" },
+    { href: "/reflection", label: "Reflection" },
+    { href: "/gallery", label: "Gallery" },
   ];
 
   const [sidebarStatus, setSidebarStatus] = useState<boolean>(false);

@@ -17,6 +17,15 @@ const HomeHero = () => {
     const context = gsap.context(() => {
       const tl = timeline.current;
 
+      // Add zoom animation for the hero section
+      tl.from(heroRef.current, {
+        scale: 0.5, // Start with a smaller scale
+        opacity: 0, // Start with no opacity
+        duration: 2.5,
+        ease: "expo.out", // Smooth easing function [[2]]
+      });
+
+      // Add existing animations
       tl.add(revealMenu(), 0).add(animateTitle(), 0.5);
     }, heroRef);
 

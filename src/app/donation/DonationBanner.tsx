@@ -21,7 +21,7 @@ const DonationBanner = () => {
           </h1>
           <ButtonCta
             data-menu-item data-hidden
-            link="#"
+            link="#footer"
             text="Donate via WhatsApp"
             background_color={button_bg}
             background_color_hover={button_bg_hover}

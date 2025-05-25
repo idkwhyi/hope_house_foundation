@@ -18,7 +18,7 @@ const DonationHero = () => {
         <NormalButton
           background="white"
           text="More Info"
-          url=""
+          url="https://wa.me/6281384370533"
           border={true}
           borderColor="black"
           borderWidth="1"
